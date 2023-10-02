@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import { getPortFolioObject } from './services'
+import { Fab } from '@/components/fab';
+import { Navbar } from '@/components/navbar';
 
 export default function Home() {
 
@@ -7,7 +8,7 @@ export default function Home() {
 
   return (
     <main>
-      
+      <Navbar></Navbar>
     </main>
   )
 }
