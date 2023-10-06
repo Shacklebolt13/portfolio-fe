@@ -1,28 +1,35 @@
-'use client';
-
-function slideLeft() {
-    const avatar = document.getElementById('avatar');
-    avatar.style.animation = 'slide-left 1s forwards';
-}
-
-function slideRight() {
-    const avatar = document.getElementById('avatar');
-    avatar.style.animation = 'slide-right 1s forwards';
-}
-
+import Image from "next/image";
+import React from "react";
+import { PROFILE_PICTURE_FILE_NAME } from "@/constants/profile";
+import { NavBarOptionsEnum } from "@/enums/NavBarOptionsEnum";
 
 export const Navbar = () => {
-    return (
-        <nav className="flex container bg-black h-99 p-2 mt-3 mx-6 rounded-3xl border-teal-400 border-2 fixed justify-between">
-            <div className="flex items-center justify-start">{/* Left button */}
-                <button className="text-white hover:text-teal-400 mr-4 glitch" onClick={slideLeft}>Left</button>
-            </div>
-            <div className="flex items-center justify-center">
-                <img src="https://media.licdn.com/dms/image/C4D03AQFYSqmfIUcOog/profile-displayphoto-shrink_200_200/0/1660930336048?e=1701907200&v=beta&t=rsYIwI6TufJXEoAWfUjBCjVTZlhU1mmu7_qW-ELmI2Q" className="rounded-full w-10 " id="avatar" />
-            </div>
-            <div className="flex items-center justify-end">
+  return (
+    <nav className="container flex bg-black h-99 p-1 my-3 mx-6 rounded-3xl lg:min-w-fill-available xl:min-w-fill-available max-xl:min-w-fill-available justify-between sticky">
+      {/* left side */}
+      <div className="flex bg-black h-fit w-fit p-1 rounded-3xl border-teal-400 border-2">
+        <Image
+          src={`/${PROFILE_PICTURE_FILE_NAME}`}
+          className="rounded-full w-10"
+          id="avatar"
+          alt="avatar"
+          width={100}
+          height={100}
+        />
+      </div>
 
-            </div>
-        </nav>
-    )
-}
+      {/* right side */}
+      <div className="inline-block flex-col justify-center right-0">
+        <a href="#about" className="text-white text-lg font-bold mx-2">
+          About
+        </a>
+        <a href="#projects" className="text-white text-lg font-bold mx-2">
+          Projects
+        </a>
+        <a href="#contact" className="text-white text-lg font-bold mx-2">
+          Contact
+        </a>
+      </div>
+    </nav>
+  );
+};
