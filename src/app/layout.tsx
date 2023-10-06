@@ -1,5 +1,7 @@
+import { Navbar } from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
+import { Fab } from "@/components/fab";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -13,7 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar></Navbar>
+        {children}
+        <footer>
+          <Fab></Fab>
+        </footer>
+      </body>
     </html>
   );
 }

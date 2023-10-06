@@ -7,26 +7,39 @@ export const Navbar = () => {
   return (
     <nav className="container flex bg-black h-99 p-1 my-3 mx-6 rounded-3xl lg:min-w-fill-available xl:min-w-fill-available max-xl:min-w-fill-available justify-between sticky">
       {/* left side */}
-      <div className="flex bg-black h-fit w-fit p-1 rounded-3xl border-teal-400 border-2">
-        <Image
-          src={`/${PROFILE_PICTURE_FILE_NAME}`}
-          className="rounded-full w-10"
-          id="avatar"
-          alt="avatar"
-          width={100}
-          height={100}
-        />
+      <div>
+        <a href="/">
+          <button className="flex bg-black h-fit w-fit p-1 rounded-full border-teal-400 hover:border-teal-100 border-2">
+            <Image
+              src={`/${PROFILE_PICTURE_FILE_NAME}`}
+              className="rounded-full w-10"
+              id="avatar"
+              alt="avatar"
+              width={100}
+              height={100}
+            />
+          </button>
+        </a>
       </div>
 
       {/* right side */}
-      <div className="inline-block flex-col justify-center right-0">
-        <a href="#about" className="text-white text-lg font-bold mx-2">
+      <div className="flex justify-center right-0">
+        <a
+          href="#about"
+          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100   mx-2 border-2 p-2 rounded-2xl"
+        >
           About
         </a>
-        <a href="#projects" className="text-white text-lg font-bold mx-2">
+        <a
+          href="#projects"
+          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100  mx-2 border-2 p-2 rounded-2xl"
+        >
           Projects
         </a>
-        <a href="#contact" className="text-white text-lg font-bold mx-2">
+        <a
+          href="#contact"
+          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100  mx-2 border-2 px-2 py-0 rounded-2xl"
+        >
           Contact
         </a>
       </div>
