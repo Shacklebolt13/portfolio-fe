@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { PROFILE_PICTURE_FILE_NAME } from "@/constants/profile";
-import { NavBarOptionsEnum } from "@/enums/NavBarOptionsEnum";
 
 export const Navbar = () => {
   return (
@@ -38,7 +37,7 @@ export const Navbar = () => {
         </a>
         <a
           href="#contact"
-          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100  mx-2 border-2 px-2 py-0 rounded-2xl"
+          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100  mx-2 border-2 px-2 p-2 rounded-2xl"
         >
           Contact
         </a>
