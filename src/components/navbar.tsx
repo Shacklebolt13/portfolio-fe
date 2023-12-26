@@ -55,19 +55,19 @@ export const Navbar = () => {
       <div className="flex justify-center right-0 items-center ">
         <a
           href="#about"
-          className={`mx-2 px-2 py-1 ${BORDER_COLOR} ${BORDER_RADIUS} ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
+          className={`mx-2 px-2 py-1 rounded-2xl ${BORDER_RADIUS} ${BORDER_COLOR}  ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
         >
           About
         </a>
         <a
           href="#projects"
-          className={`mx-2 px-2 py-1 ${BORDER_COLOR} ${BORDER_RADIUS} ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
+          className={`mx-2 px-2 py-1 ${BORDER_RADIUS} ${BORDER_COLOR}  ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
         >
           Projects
         </a>
         <a
           href="#contact"
-          className={`mx-2 px-2 py-1 ${BORDER_COLOR} ${BORDER_RADIUS} ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
+          className={`mx-2 px-2 py-1 ${BORDER_RADIUS} ${BORDER_COLOR}  ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
         >
           Contact
         </a>
