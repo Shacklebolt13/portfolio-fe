@@ -17,9 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <div className="xs:min-w-fill-available s:min-w-fill-available m:min-w-fill-available lg:min-w-fill-available xl:min-w-fill-available max-xl:min-w-fill-available">
+          {children}
+        </div>
         <footer>
-          <Fab></Fab>
+          <Fab />
         </footer>
       </body>
     </html>

@@ -1,7 +1,15 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import { PROFILE_PICTURE_FILE_NAME } from "@/constants/public-assets";
+import {
+  BG_FILL,
+  BG_OPACITY,
+  BORDER_COLOR,
+  BORDER_RADIUS,
+  BORDER_WIDTH,
+  PROFILE_PICTURE_FILE_NAME,
+  TEXT_COLOR,
+} from "@/constants/public-assets";
 
 export const Navbar = () => {
   useEffect(() => {
@@ -23,12 +31,14 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={` container flex h-99 p-1 my-3 mx-6 rounded-3xl lg:min-w-fill-available xl:min-w-fill-available max-xl:min-w-fill-available justify-between fixed`}
+      className={` container flex h-99 p-1 my-3 mx-6 lg:min-w-fill-available xl:min-w-fill-available max-xl:min-w-fill-available justify-between relative`}
     >
       {/* left side */}
       <div>
         <a href="/">
-          <button className="flex bg-black h-fit w-fit p-1 rounded-full border-teal-400 hover:border-teal-100 border-2">
+          <button
+            className={`flex h-fit w-fit p-1 rounded-full ${BORDER_COLOR} ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
+          >
             <Image
               src={`/${PROFILE_PICTURE_FILE_NAME}`}
               className="rounded-full w-10"
@@ -42,22 +52,22 @@ export const Navbar = () => {
       </div>
 
       {/* right side */}
-      <div className="flex justify-center right-0 items-center">
+      <div className="flex justify-center right-0 items-center ">
         <a
           href="#about"
-          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100   mx-2 border-2 px-2 py-1 rounded-2xl"
+          className={`mx-2 px-2 py-1 ${BORDER_COLOR} ${BORDER_RADIUS} ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
         >
           About
         </a>
         <a
           href="#projects"
-          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100  mx-2 border-2 px-2 py-1 rounded-2xl"
+          className={`mx-2 px-2 py-1 ${BORDER_COLOR} ${BORDER_RADIUS} ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
         >
           Projects
         </a>
         <a
           href="#contact"
-          className="text-teal-400 border-teal-400 hover:border-teal-100 hover:text-teal-100  mx-2 border-2 px-2 py-1 rounded-2xl"
+          className={`mx-2 px-2 py-1 ${BORDER_COLOR} ${BORDER_RADIUS} ${BORDER_WIDTH} ${BG_FILL} ${BG_OPACITY} ${TEXT_COLOR}`}
         >
           Contact
         </a>
