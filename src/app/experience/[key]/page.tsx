@@ -5,7 +5,7 @@ const getExperience = (key) => {
   return RESUME.experiences[key];
 };
 
-export default function Page({ params }) {
+export default function Page({ params, searchParams }) {
   const experience = getExperience(params.key);
   return <div>ID: {`${experience?.name}`}</div>;
 }
