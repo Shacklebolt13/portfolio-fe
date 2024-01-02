@@ -5,7 +5,7 @@ const getTechnology = (key) => {
   return RESUME.technologies[key];
 };
 
-export default function Page({ params }) {
+export default function Page({ params, searchParams }) {
   const technology = getTechnology(params.key);
   return <div>ID: {`${technology?.name}`}</div>;
 }
