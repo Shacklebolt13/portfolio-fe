@@ -1,6 +1,7 @@
-import { Navbar } from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
+import { Providers } from "./providers";
+import { StaticNavbar } from "@/components/navbar";
 import { Fab } from "@/components/fab";
 
 export const metadata: Metadata = {
@@ -14,15 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body>
-        <Navbar />
-        <div className="xs:min-w-fill-available s:min-w-fill-available m:min-w-fill-available lg:min-w-fill-available xl:min-w-fill-available max-xl:min-w-fill-available">
+        <Providers>
+          <StaticNavbar />
           {children}
-        </div>
-        <footer>
           <Fab />
-        </footer>
+        </Providers>
       </body>
     </html>
   );
