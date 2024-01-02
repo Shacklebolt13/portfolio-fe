@@ -1,0 +1,58 @@
+name: Gagandeep Singh Bhambrah
+links:
+  - href: grimmgagan@gmail.com
+    icon: email.png
+    name: Email
+  - href: "https://www.linkedin.com/in/gagandeep-singh-bhambrah-16835919a"
+    icon: linkedin.png
+    name: LinkedIn
+  - href: "https://github.com/Shacklebolt13"
+    icon: github.png
+    name: GitHub
+projects:
+  covid19Tracker:
+    name: Covid-19 Tracker
+    description: A web app to track the spread of Covid-19 across the globe.
+    link: "https://covid-19-tracker-1c6e7.web.app/"
+    source:
+      type: github
+      link: ""
+    techStack:
+      - ReactJS
+      - Material UI
+      - ChartJS
+      - Firebase
+technologies:
+  reactJS:
+    name: ReactJS
+    description: A JavaScript library for building user interfaces
+    relatedProjects:
+      web:
+        name: Web
+      mobile:
+        name: Mobile
+      desktop:
+        name: Desktop
+experiences:
+  testcompany:
+    key: testcompany
+    name: Intern
+    company: Test
+    description: >-
+      Worked on a project to automate the process of creating and updating the
+      test cases for the application.
+    duration: May 2019 - July 2019
+    techStack:
+      java:
+        icon: java.png
+      springBoot:
+        icon: spring.png
+      angular:
+        icon: angular.png
+      mySQL:
+        icon: mysql.png
+    relatedProjects:
+      project1:
+        icon: project1.png
+      project2:
+        icon: project2.png
