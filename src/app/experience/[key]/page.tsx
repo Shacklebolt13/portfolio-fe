@@ -1,3 +1,4 @@
+import { ExperienceRepository } from "@/db/repositories/experienceRepository";
 import { RESUME } from "@/services/resumeParser";
 
 const getExperience = (key) => {
@@ -10,9 +11,8 @@ export default function Page({ params, searchParams }) {
   return <div>ID: {`${experience?.name}`}</div>;
 }
 
-export function generateStaticParams() {
-  const paths = Object.keys(RESUME.experiences).map((key) => ({
-    params: { key },
+export async function generateStaticParams() {
+  return (await ExperienceRepository.findAll()).map((experience) => ({
+    params: { key: experience.id },
   }));
-  return paths;
 }
