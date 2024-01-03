@@ -10,6 +10,5 @@ export const getCollection = () => {
 
 export const findAll = async () => {
   const experienceCollection = getCollection();
-  console.log("experienceCollection", experienceCollection);
   return (await getDocs(experienceCollection)).docs.map((doc) => doc.data());
 };
