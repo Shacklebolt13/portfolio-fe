@@ -1,7 +1,5 @@
 import { RESUME } from "@/services/resumeParser";
 
-export const dynamicParams = false;
-
 const getProject = (key) => {
   console.info("fetching project: ", key);
   return RESUME.projects[key];
@@ -12,7 +10,7 @@ export default function Page({ params, searchParams }) {
   return <div>ID: {`${project.name}`}</div>;
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const paths = Object.keys(RESUME.projects).map((key) => ({
     params: { key },
   }));
