@@ -14,7 +14,7 @@ import NextLink from "next/link";
 
 import { PROFILE_PICTURE_FILE_NAME } from "@/constants/public-assets";
 
-export default () => {
+export default function StaticNavbar() {
   return (
     <Navbar maxWidth="full">
       <NavbarBrand>
@@ -64,4 +64,4 @@ export default () => {
       </NavbarBrand>
     </Navbar>
   );
-};
+}

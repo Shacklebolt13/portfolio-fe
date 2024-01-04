@@ -1,3 +1,7 @@
-export default () => {
-  return <div>This is a test</div>;
-};
+export default function ContactPage() {
+  return (
+    <div>
+      <h1>Contact Page</h1>
+    </div>
+  );
+}

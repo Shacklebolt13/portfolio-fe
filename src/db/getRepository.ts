@@ -3,7 +3,7 @@ import { BaseRepository } from "./baseRepository";
 
 const repository_cache: { [key: string]: BaseRepository } = {};
 
-export default (collection_name: string) => {
+export default function getRepository(collection_name: string) {
   if (!repository_cache[collection_name]) {
     repository_cache[collection_name] = new BaseRepository(
       firestore_app,
@@ -11,4 +11,4 @@ export default (collection_name: string) => {
     );
   }
   return repository_cache[collection_name];
-};
+}
