@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-import { StaticNavbar } from "@/components/navbar";
+import StaticNavbar from "@/components/staticNavbar";
 import { Fab } from "@/components/fab";
 
 export const metadata: Metadata = {
