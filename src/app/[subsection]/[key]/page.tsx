@@ -1,3 +1,4 @@
+import DataPage from "@/components/dataPage";
 import {
   ACHIEVEMENT_COLLECTION,
   CONTACT_COLLECTION,
@@ -46,5 +47,12 @@ export default async function Page({ params, searchParams }) {
     notFound();
   }
 
-  return <>{`ID: ${JSON.stringify(document.data())}`}</>;
+  const data = document.data();
+  console.log(JSON.stringify(data));
+
+  return (
+    <>
+      <DataPage data={data} />
+    </>
+  );
 }
