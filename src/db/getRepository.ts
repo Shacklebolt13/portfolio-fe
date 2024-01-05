@@ -17,9 +17,12 @@ import {
  * A common model was used for all the collections to make it easier to work with
  * on a single page
  */
-interface Model {
+export interface Model {
   //any heading/project name/job title etc.
   title: string;
+
+  //the organization name for the project/experience
+  organization: string;
 
   //for experience in resume
   responsibles: string[];
@@ -44,8 +47,8 @@ const model_converter = {
     const data = snap.data();
     return {
       ...data,
-      started_on: data.started_on.toDate(),
-      ended_on: data.ended_on.toDate(),
+      started_on: data?.started_on?.toDate(),
+      ended_on: data?.ended_on?.toDate(),
     };
   },
 };

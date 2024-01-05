@@ -1,4 +1,6 @@
-import DataPage from "@/components/dataPage";
+import DataSection from "@/components/dataSection";
+import RelatedSection from "@/components/relatedSection";
+import TitleSection from "@/components/titleSection";
 import {
   ACHIEVEMENT_COLLECTION,
   CONTACT_COLLECTION,
@@ -51,8 +53,10 @@ export default async function Page({ params, searchParams }) {
   console.log(JSON.stringify(data));
 
   return (
-    <>
-      <DataPage data={data} />
-    </>
+    <div className="flex flex-col justify-evenly content-evenly">
+      <TitleSection data={data} />
+      <DataSection data={data} />
+      <RelatedSection data={data} />
+    </div>
   );
 }

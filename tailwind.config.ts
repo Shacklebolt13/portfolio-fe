@@ -24,9 +24,6 @@ const config: Config = {
       maxWidth: {
         "fill-available": "-webkit-fill-available",
       },
-      colo: {
-        primary: "#2dd4bf",
-      },
     },
   },
   darkMode: "class",
