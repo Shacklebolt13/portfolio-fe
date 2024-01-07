@@ -27,10 +27,32 @@ export interface Model {
   //for experience in resume
   responsibles: string[];
 
+  // the blog for the project/experience
+  blog: string[];
+
   //for time period
   started_on: Date;
   ended_on: Date;
   ongoing: boolean;
+
+  //relateds
+  related_projects: {
+    title: string;
+    key: string;
+    icon: string;
+  }[];
+
+  related_skills: {
+    title: string;
+    key: string;
+    icon: string;
+  }[];
+
+  related_technologies: {
+    title: string;
+    key: string;
+    icon: string;
+  }[];
 }
 
 /**
