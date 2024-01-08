@@ -9,8 +9,8 @@ export default function TitleSection({
   className?: string;
 }) {
   return (
-    <div className={className?.concat(" inline-block") ?? "inline-block"}>
-      <div className="container-fluid  flex justify-between">
+    <div className={`${className ?? ""} block`}>
+      <div className="container-fluid  flex flex-row justify-between">
         <div className="inline-block">
           <span className="text-6xl font-bold">{data.title}</span>
         </div>
@@ -19,7 +19,7 @@ export default function TitleSection({
             <span>{data.organization ?? ""}</span>
             <span>
               {showDate(data.started_on)} {" - "}
-              {data.ongoing ? "Present" : showDate(data.ended_on)}
+              {data.ongoing ?? true ? "Present" : showDate(data.ended_on)}
             </span>
           </div>
         </div>

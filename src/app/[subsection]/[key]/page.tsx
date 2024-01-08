@@ -39,34 +39,12 @@ export default async function Page({ params, searchParams }) {
   const blog = await createBlogSection(data);
 
   return (
-    <div className="flex flex-col justify-evenly content-evenly">
+    <div className="flex flex-col justify-evenly content-evenly mx-4 ">
       <TitleSection data={data} />
 
-      <BlogSection data={data} blog={blog} />
+      <BlogSection blog={blog} />
 
-      {(data.related_projects ?? []).length > 0 ? (
-        <RelatedSection
-          data={data}
-          subsection={AVAILABLE_SUBSECTIONS.PROJECT}
-        />
-      ) : (
-        <></>
-      )}
-
-      {(data.related_skills ?? []).length > 0 ? (
-        <RelatedSection data={data} subsection={AVAILABLE_SUBSECTIONS.SKILL} />
-      ) : (
-        <></>
-      )}
-
-      {(data.related_technologies ?? []).length > 0 ? (
-        <RelatedSection
-          data={data}
-          subsection={AVAILABLE_SUBSECTIONS.TECHNOLOGY}
-        />
-      ) : (
-        <></>
-      )}
+      <RelatedSection data={data} />
     </div>
   );
 }
