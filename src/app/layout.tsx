@@ -18,9 +18,11 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body>
         <Providers>
-          <StaticNavbar />
-          {children}
-          <Fab />
+          <div className="min-h-screen flex flex-col">
+            <StaticNavbar />
+            {children}
+            <Fab />
+          </div>
         </Providers>
       </body>
     </html>

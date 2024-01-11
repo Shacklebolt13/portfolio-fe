@@ -39,11 +39,10 @@ export default async function Page({ params, searchParams }) {
   const blog = await createBlogSection(data);
 
   return (
-    <div className="flex flex-col justify-evenly content-evenly mx-4 ">
+    <div className="flex flex-col grow m-4">
       <TitleSection data={data} />
-
-      <BlogSection blog={blog} />
-
+      <hr className="my-4" />
+      <BlogSection blog={blog} className="grow" />
       <RelatedSection data={data} />
     </div>
   );

@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/utils/converters"
+    "src/utils/converters"
   ],
   "exclude": [
     "node_modules"

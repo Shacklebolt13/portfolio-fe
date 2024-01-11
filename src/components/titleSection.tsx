@@ -1,4 +1,4 @@
-import { showDate } from "@/app/utils/converters";
+import { showDate } from "@/utils/converters";
 import { Model } from "@/db/getRepository";
 import { MDXRemote } from "next-mdx-remote/rsc";
 export default function TitleSection({

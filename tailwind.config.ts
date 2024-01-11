@@ -24,6 +24,9 @@ const config: Config = {
       maxWidth: {
         "fill-available": "-webkit-fill-available",
       },
+      minHeight: {
+        "fill-available": "-webkit-fill-available",
+      },
     },
   },
   darkMode: "class",
