@@ -1,6 +1,5 @@
 "use client";
-import { Card, CardBody, ScrollShadow } from "@nextui-org/react";
-import { Model } from "@/db/getRepository";
+import { ScrollShadow } from "@nextui-org/react";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import { MDXRemote } from "next-mdx-remote";
 

@@ -1,5 +1,5 @@
 import BlogSection from "@/components/blogSection";
-import createBlogSection from "@/services/mdxGenerator";
+import generateMdxArray from "@/services/mdxGenerator";
 import RelatedSection from "@/components/relatedSection";
 import TitleSection from "@/components/titleSection";
 
@@ -36,7 +36,7 @@ export default async function Page({ params, searchParams }) {
   }
 
   const data = document.data();
-  const blog = await createBlogSection(data);
+  const blog = await generateMdxArray(data);
 
   return (
     <div className="flex flex-col grow m-4">

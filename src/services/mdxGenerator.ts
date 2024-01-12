@@ -1,8 +1,8 @@
 import { Model } from "@/db/getRepository";
-import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
+import { MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
 import { serialize } from "next-mdx-remote/serialize";
 
-export default async function createBlogSection(data: Model) {
+export default async function generateMdxArray(data: Model) {
   const blog: MDXRemoteSerializeResult[] = [];
 
   if (!data || !data.blog) {

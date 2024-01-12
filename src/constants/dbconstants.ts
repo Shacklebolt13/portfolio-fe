@@ -4,5 +4,6 @@ export const PROJECT_COLLECTION = "project";
 export const EDUCATION_COLLECTION = "education";
 export const ACHIEVEMENT_COLLECTION = "achievement";
 export const SKILL_COLLECTION = "skill";
-export const CONTACT_COLLECTION = "contact";
+export const CONTACT_COLLECTION = "links";
 export const SOCIAL_COLLECTION = "social";
+export const ABOUT_COLLECTION = "about";

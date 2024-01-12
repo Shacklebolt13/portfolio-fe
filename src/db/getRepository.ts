@@ -53,6 +53,12 @@ export interface Model {
     key: string;
     icon: string;
   }[];
+
+  related_links: {
+    title: string;
+    link: string;
+    icon: string;
+  }[];
 }
 
 /**
