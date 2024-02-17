@@ -18,9 +18,6 @@ import {
  * on a single page
  */
 export interface Model {
-  //the id of the document
-  id: string;
-
   //any heading/project name/job title etc.
   title: string;
 
@@ -62,6 +59,13 @@ export interface Model {
     link: string;
     icon: string;
   }[];
+
+  showcase: {
+    id: string;
+    title: string;
+    description: string;
+    icon: string;
+  };
 }
 
 /**
