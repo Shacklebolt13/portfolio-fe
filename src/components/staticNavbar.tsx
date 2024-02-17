@@ -46,21 +46,15 @@ export default function StaticNavbar({
             {contactModal.modal}
           </>
 
-          <Dropdown backdrop="blur">
-            <DropdownTrigger>
-              <Button variant="bordered" color="primary">
-                Showcase
-              </Button>
-            </DropdownTrigger>
-            <DropdownMenu variant="faded">
-              <DropdownItem as={NextLink} href="/projects">
-                Projects
-              </DropdownItem>
-              <DropdownItem as={NextLink} href="/tech">
-                Tech
-              </DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
+          <Button
+            variant="bordered"
+            color="primary"
+            as={NextLink}
+            href="/showcase"
+          >
+            Showcase
+          </Button>
+
           <Button
             as={NextLink}
             variant="bordered"

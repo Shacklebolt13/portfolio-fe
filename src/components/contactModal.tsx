@@ -42,6 +42,7 @@ export default function ContactModal({
                   <>
                     <Avatar
                       src={linkDetail.icon}
+                      size="lg"
                       title={linkDetail.title}
                       as={Link}
                       target="_blank"
