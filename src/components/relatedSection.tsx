@@ -38,6 +38,7 @@ export default function RelatedSection({
                 <Button
                   key={project.key}
                   variant="bordered"
+                  className="mx-2"
                   size="md"
                   as={NextLink}
                   href={`/project/${project.key}`}
@@ -45,7 +46,11 @@ export default function RelatedSection({
                     <Image src={project.icon} alt="" width={40} height={40} />
                   }
                 >
-                  {project.title}
+                  <div className="flex-col">
+                    <span>{project.title}</span>
+                    <br />
+                    <small>This is a test</small>
+                  </div>
                 </Button>
               );
             }) ?? <>No related projecs</>}
