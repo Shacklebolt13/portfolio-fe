@@ -24,7 +24,6 @@ export default async function RootLayout({
           <div className="min-h-screen flex flex-col">
             <StaticNavbar contactDetail={contactDetail} />
             {children}
-            <Fab />
           </div>
         </Providers>
       </body>
