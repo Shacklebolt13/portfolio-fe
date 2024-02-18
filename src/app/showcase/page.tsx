@@ -1,7 +1,7 @@
 import ShowCaseTabs from "@/components/showcaseTabs";
 import {
   CERTIFICATION_COLLECTION,
-  COURSES_COLLECTION,
+  COURSE_COLLECTION,
   EDUCATION_COLLECTION,
   EXPERIENCE_COLLECTION,
   PROJECT_COLLECTION,
@@ -19,7 +19,7 @@ function getAllDisplayData() {
     PROJECT_COLLECTION,
     EDUCATION_COLLECTION,
     SKILL_COLLECTION,
-    COURSES_COLLECTION,
+    COURSE_COLLECTION,
     CERTIFICATION_COLLECTION,
   ];
   const collectionDataMap = new Map<string, Model[]>();
