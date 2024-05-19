@@ -32,7 +32,7 @@ function populateCards(collection_name: string, data: Model) {
       </CardBody>
     </Card>
   );
-  return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(() => va);
+  return va;
 }
 
 function populateCardArea(collection_name: string, data: Model[] | undefined) {

@@ -59,7 +59,8 @@ export default function StaticNavbar({
             as={NextLink}
             variant="bordered"
             color="primary"
-            href="/resume"
+            download={true}
+            href="/gagandeep_resume.md.pdf"
           >
             Resume
           </Button>

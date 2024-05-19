@@ -15,7 +15,7 @@ export default function BlogSection({
     <div className={`${className ?? ""} block`}>
       <ScrollShadow hideScrollBar>
         {blog.map((compiledSource) => (
-          <div key={++counter}>
+          <div key={++counter} className="my-4">
             <MDXRemote {...compiledSource} />
           </div>
         ))}
