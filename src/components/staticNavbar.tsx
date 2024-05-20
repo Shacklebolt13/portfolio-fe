@@ -37,7 +37,8 @@ export default function StaticNavbar({
         <NavbarContent justify="end">
           <>
             <Button
-              onPress={contactModal.onOpen}
+              // onPress={contactModal.onOpen}
+              onClick={contactModal.onOpen}
               variant="bordered"
               color="primary"
             >

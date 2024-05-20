@@ -39,16 +39,15 @@ export default function ContactModal({
               </ModalBody>
               <ModalFooter>
                 {contactDetail?.related_links.map((linkDetail) => (
-                  <>
-                    <Avatar
-                      src={linkDetail.icon}
-                      size="lg"
-                      title={linkDetail.title}
-                      as={Link}
-                      target="_blank"
-                      href={linkDetail.link ?? "#"}
-                    />
-                  </>
+                  <Avatar
+                    src={linkDetail.icon}
+                    size="lg"
+                    key={linkDetail.title}
+                    title={linkDetail.title}
+                    as={Link}
+                    target="_blank"
+                    href={linkDetail.link ?? "#"}
+                  />
                 ))}
               </ModalFooter>
             </>

@@ -11,6 +11,7 @@ function populateCards(collection_name: string, data: Model) {
       as={Link}
       href={`/${collection_name}/${data.showcase.id}`}
       className="flex m-1"
+      key={data.showcase.id}
     >
       <CardBody>
         <div className="flex">
