@@ -61,7 +61,12 @@ export default function ShowCaseTabs(props: { data: Map<string, Model[]> }) {
       key,
       <Tab key={key} title={capAndPlurify(key)}>
         <Card>
-          <CardBody>{populateCardArea(key, value)}</CardBody>
+          <CardBody>
+            {populateCardArea(
+              key,
+              value.sort((a, b) => b.showcase.id.localeCompare(a.showcase.id))
+            )}
+          </CardBody>
         </Card>
       </Tab>
     );
