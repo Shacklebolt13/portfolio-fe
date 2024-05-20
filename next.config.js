@@ -5,7 +5,11 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
   images: {
-    domains: ["media.licdn.com", "play-lh.googleusercontent.com"],
+    domains: [
+      "media.licdn.com",
+      "play-lh.googleusercontent.com",
+      "img.freepik.com",
+    ],
   },
 };
 

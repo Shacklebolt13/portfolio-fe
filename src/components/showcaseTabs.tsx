@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 function populateCards(collection_name: string, data: Model) {
-  const va = (
+  return (
     <Card
       as={Link}
       href={`/${collection_name}/${data.showcase.id}`}
@@ -32,7 +32,6 @@ function populateCards(collection_name: string, data: Model) {
       </CardBody>
     </Card>
   );
-  return va;
 }
 
 function populateCardArea(collection_name: string, data: Model[] | undefined) {
