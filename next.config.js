@@ -9,6 +9,8 @@ const nextConfig = {
       "media.licdn.com",
       "play-lh.googleusercontent.com",
       "img.freepik.com",
+      "hacktronian.in",
+      "www.scraping-bot.io",
     ],
   },
 };
