@@ -31,9 +31,9 @@ export interface Model {
   blog: string[];
 
   //for time period
-  started_on: Date;
-  ended_on: Date;
-  ongoing: boolean;
+  started_on?: Date;
+  ended_on?: Date;
+  ongoing?: boolean;
 
   //relateds
   related_projects: {
