@@ -1,12 +1,5 @@
 import ShowCaseTabs from "@/components/showcaseTabs";
-import {
-  CERTIFICATION_COLLECTION,
-  COURSE_COLLECTION,
-  EDUCATION_COLLECTION,
-  EXPERIENCE_COLLECTION,
-  PROJECT_COLLECTION,
-  SKILL_COLLECTION,
-} from "@/constants/dbconstants";
+import { TABULATED_COLLECTIONS } from "@/constants/dbconstants";
 import getRepository, { Model } from "@/db/getRepository";
 
 async function getDocumentListForCards(collection_name: string) {
@@ -14,16 +7,8 @@ async function getDocumentListForCards(collection_name: string) {
 }
 
 function getAllDisplayData() {
-  const collections = [
-    EXPERIENCE_COLLECTION,
-    PROJECT_COLLECTION,
-    EDUCATION_COLLECTION,
-    SKILL_COLLECTION,
-    COURSE_COLLECTION,
-    CERTIFICATION_COLLECTION,
-  ];
   const collectionDataMap = new Map<string, Model[]>();
-  collections.forEach(async (collection) => {
+  TABULATED_COLLECTIONS.forEach(async (collection) => {
     var data: Model[] = [];
     (await getDocumentListForCards(collection)).forEach((document) => {
       data.push(document.data() as Model);
