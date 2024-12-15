@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 function populateCards(collection_name: string, data: Model) {
+  console.log(data?.showcase?.id)
   return (
     <Card
       as={Link}
