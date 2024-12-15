@@ -11,7 +11,13 @@ const nextConfig = {
       "img.freepik.com",
       "hacktronian.in",
       "www.scraping-bot.io",
+      "www.calsoftinc.com",
+      "www.wisbox.in",
+      "fontawesome.com",
+      "www.svgrepo.com",
+      "www.braneenterprises.com"
     ],
+    dangerouslyAllowSVG : true
   },
 };
 
