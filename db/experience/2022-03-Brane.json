@@ -1,0 +1,21 @@
+{
+    "showcase": {
+        "description": "Freelanced for a project at Brane Enterprises",
+        "icon": "/icons/brane.png",
+        "id": "2022-03-Brane",
+        "title": "Consultant @ Brane Enterprises"
+    },
+    "blog": [
+        "## Summary\n---\nI worked as a freelance backend developer for a company that was building a real-time android app for managing their own proprietary smart home devices. The project was a success and it successfully demonstrated the POC to the higher-ups. ",
+        "## How I got the gig\n---\nI had a good friend who had been collaborating with me for a while. He was an Android developer and I was a backend developer. We had been working on a few projects together and he had been telling me about this company he was working for. He told me that they were looking for a backend developer and if I was interested, he could refer me. I was interested and he referred me. I went through the interview process and got the gig. ",
+        "## My Journey\n---\nSince this was a freelance gig, I was working remotely. I was working on a project that was already in progress. The project was a real-time android app that can be used for managing smart home devices. As far as I was told, the company was doing a POC on proprietary smart home devices and they wanted to build an app that could manage these devices. Read more about the project [here](/project/brane-smart-home-app).",
+        "## What challenges I faced\n---\nThe biggest challenge I faced was collaborating with the Arduino developer. The Arduino developer was working on the firmware and communication protocol for the smart home devices. I had to make sure that the backend was compatible with the firmware and communication protocol. This was a bit challenging because the various constraints of the devices. ",
+        "## The Outcome\n---\nThe project was a success. The app was able to manage the smart home devices and the company was able to demonstrate the POC to the higher-ups. That was the end of my gig. I was paid for my work and I moved on to other projects.",
+        "## What I learned\n---\nI learned a lot from this project. I learned how to work with various different clients, communicating with different protocols, and working with different technologies. It was a great learning experience for me, and I enjoyed working on this project. This was my first taste of working on a real-time application, with IOT devices, and I loved it. I am looking forward to working on more projects like this in the future."
+    ],
+    "organization": "Brane Enterprises",
+    "title": "Consultant",
+    "started_on": "2022-02-28T18:30:00.709Z",
+    "ongoing": false,
+    "ended_on": "2022-05-17T18:30:00.127Z"
+}

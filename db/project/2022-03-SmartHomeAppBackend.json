@@ -1,0 +1,16 @@
+{
+    "title": "Smart Home Backend",
+    "organization": "Personal",
+    "blog": [
+        "# please check back later."
+    ],
+    "showcase": {
+        "title": "Smart Home Application Backend",
+        "description": "Built a real time backend for a smart home application",
+        "id": "2022-03-SmartHomeAppBackend",
+        "icon": "https://img.freepik.com/premium-vector/smarthome_46706-1195.jpg"
+    },
+    "ended_on": "2022-05-15T18:30:00.323Z",
+    "started_on": "2022-03-14T18:30:00.280Z",
+    "ongoing": false
+}

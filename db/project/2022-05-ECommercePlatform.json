@@ -1,0 +1,16 @@
+{
+    "ended_on": "2024-12-15T15:54:07.318Z",
+    "ongoing": false,
+    "started_on": "2022-05-15T15:54:24.912Z",
+    "blog": [
+        "# please check back later."
+    ],
+    "showcase": {
+        "icon": "/icons/ecommerce.svg",
+        "description": "Built an E-Commerce Platform for Wisbox",
+        "id": "2022-05-ECommercePlatform",
+        "title": "E-Commerce Platform"
+    },
+    "title": "E-Commerce Platform",
+    "organization": "Wisbox Inc."
+}

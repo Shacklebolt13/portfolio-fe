@@ -1,0 +1,12 @@
+{
+    "blog": [
+        "# please check back later."
+    ],
+    "title": "Django",
+    "showcase": {
+        "id": "django",
+        "description": "My experience with the Django framework.",
+        "title": "Django",
+        "icon": "/icons/django.svg"
+    }
+}
