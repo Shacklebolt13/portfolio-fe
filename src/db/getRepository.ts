@@ -194,9 +194,6 @@ class FileRepository {
 
   async findAll() {
     const file_names = await readdir(this.folder_path);
-    const documentDataList = (file_names).map(async (file_name) => {
-      return await this.findById(file_name);
-    });
     return new FileModels(this.folder_path, file_names);
   }
 
