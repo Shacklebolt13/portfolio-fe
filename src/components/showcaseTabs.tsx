@@ -102,5 +102,5 @@ export default function ShowCaseTabs(props: { data: Map<string, Model[]> }) {
     );
   });
 
-  return <Tabs defaultSelectedKey={tab} onSelectionChange={(key) => setTab(key.toString())} >{Array.from(tabs.values())}</Tabs>;
+  return <Tabs className="max-w-full" defaultSelectedKey={tab} onSelectionChange={(key) => setTab(key.toString())} >{Array.from(tabs.values())}</Tabs>;
 }
