@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
@@ -33,6 +34,7 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "husky": "^9.1.7",
     "postcss": "latest",
     "tailwindcss": "^3.4.0",
     "typescript": "latest"

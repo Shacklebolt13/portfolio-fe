@@ -10,7 +10,7 @@ export default function Intro() {
             Hi, I am{" "}
             <span className="text-primary">Gagandeep Singh Bhambrah</span>
           </h1>
-          <p className="text-2xl text-center">I am a full-stack developer</p>
+          <p className="text-2xl text-center">I am a Backend developer</p>
         </div>
       </div>
     </>

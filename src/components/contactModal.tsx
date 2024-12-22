@@ -32,10 +32,14 @@ export default function ContactModal({
                 {contactDetail?.title}
               </ModalHeader>
               <ModalBody>
-                Please feel free to contact me through any of the following
-                links.
-                <br />I usually respond very quickly.
-                <br />I am also open to suggestions and feedback.
+                Hi there I am Gagandeep Singh Bhambrah.<br /> I am from Raurkela, India, and I am a Backend developer.
+                I enjoy playing online games, watching movies and exploring new technologies.
+                <br /><br />
+                A fun fact about me is that I used to play PUBG Mobile,
+                and have played tournaments with Scout, Mavi and some other players from OrangeRock.
+                <br /><br />
+                Please feel free to check out my github and reach out using below links.
+
               </ModalBody>
               <ModalFooter>
                 {contactDetail?.related_links.map((linkDetail) => (

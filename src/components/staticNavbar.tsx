@@ -42,7 +42,7 @@ export default function StaticNavbar({
               variant="bordered"
               color="primary"
             >
-              Contact
+              About
             </Button>
             {contactModal.modal}
           </>
