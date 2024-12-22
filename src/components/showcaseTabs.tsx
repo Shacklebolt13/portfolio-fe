@@ -52,10 +52,6 @@ function populateCardArea(collection_name: string, data: Model[] | undefined) {
   );
 }
 
-function getSelectedTab() {
-  const searchParams = useSearchParams();
-  return searchParams.get("tab") ?? undefined;
-}
 
 
 export default function ShowCaseTabs(props: { data: Map<string, Model[]> }) {
@@ -64,10 +60,7 @@ export default function ShowCaseTabs(props: { data: Map<string, Model[]> }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-
-  var selectedTab = getSelectedTab() ?? EXPERIENCE_COLLECTION;
-  var [tab, setTab] = useState(selectedTab);
-
+  const getSelectedTab = () => searchParams.get("tab") ?? undefined;
   const setSelectedTab = (tab: string) => {
     const newSearchParams = new URLSearchParams(searchParams.toString());
     newSearchParams.set("tab", tab);
@@ -75,6 +68,9 @@ export default function ShowCaseTabs(props: { data: Map<string, Model[]> }) {
     const newUrl = `${pathname}?${newSearchParams.toString()}`;
     router.replace(newUrl);
   }
+
+  var selectedTab = getSelectedTab() ?? EXPERIENCE_COLLECTION;
+  var [tab, setTab] = useState(selectedTab);
 
   useEffect(() => {
     if (selectedTab === undefined) {
