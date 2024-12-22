@@ -29,7 +29,7 @@ function populateCards(collection_name: string, data: Model) {
           <Divider orientation="vertical" className="mx-4 bg-primary" />
           <div>
             <p>
-              <span className=" xl:text-2xl lg:text-xl md:text-lg sm:text-sm font-bold">{data.showcase.title}</span>
+              <span className="xl:text-2xl lg:text-xl md:text-lg sm:text-sm text-sm font-bold">{data.showcase.title}</span>
               <br />
               <small className="text-default-500 md:text-sm sm:text-xs ">
                 {data.showcase.description}

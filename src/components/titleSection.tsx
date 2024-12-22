@@ -27,7 +27,7 @@ export default function TitleSection({
             width={70}
             height={70}
           />
-          <span className=" xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl font-bold mx-2">{data.title}</span>
+          <span className="lg:text-5xl md:text-4xl sm-min:text-4xl text-4xl font-bold mx-2">{data.title}</span>
         </div>
         <div className="inline-block">
           <div className="flex flex-col justify-end min-h-full italic text-sm text-gray-400">
