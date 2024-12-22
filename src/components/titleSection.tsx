@@ -13,8 +13,8 @@ export default function TitleSection({
   var ended_on = data?.ongoing
     ? "Present"
     : data?.ended_on
-    ? showDate(data?.ended_on)
-    : "";
+      ? showDate(data?.ended_on)
+      : "";
   var duration = started_on && ended_on ? `${started_on} - ${ended_on}` : "";
   return (
     <div className={`${className ?? ""} block`}>

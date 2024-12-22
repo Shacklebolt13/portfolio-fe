@@ -9,9 +9,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (let coll of TABULATED_COLLECTIONS) {
     var collData = await getRepository(coll).findAll();
     console.log(`generating ${collData.docs.length} sitemap for ${coll}`);
-    collData.forEach((document) => {
+    collData.docs.forEach((document) => {
       sitemap.push({
-        url: `${BASE_URL}/${coll}/${document.id}`,
+        url: `${BASE_URL}/${coll}/${document.data().showcase.id}`,
         lastModified: new Date(),
         changeFrequency: "daily",
       });

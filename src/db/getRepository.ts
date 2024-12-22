@@ -20,6 +20,9 @@ import { readdir, readFile } from "fs/promises";
  * on a single page
  */
 export interface Model {
+
+  id: string;
+
   //any heading/project name/job title etc.
   title: string;
 
@@ -174,11 +177,11 @@ class BaseRepository {
 
     //if the file by the document id does not exist, create one in db/filename.json
 
-    try {
-      await readFile(`${process.cwd()}/db/${id}.json`)
-    } catch (e) {
-      writeFileSync(`${process.cwd()}/db/${result._key}.json`, JSON.stringify(result.data()))
-    }
+    // try {
+    //   await readFile(`${process.cwd()}/db/${id}.json`)
+    // } catch (e) {
+    //   writeFileSync(`${process.cwd()}/db/${result._key}.json`, JSON.stringify(result.data()))
+    // }
     return result;
   }
 }
