@@ -189,7 +189,7 @@ class BaseRepository {
 class FileRepository {
   folder_path: string;
   constructor(folder_path: string) {
-    this.folder_path = folder_path;
+    this.folder_path = folder_path.toLocaleLowerCase();
   }
 
   async findAll() {
