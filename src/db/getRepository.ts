@@ -193,8 +193,15 @@ class FileRepository {
   }
 
   async findAll() {
-    const file_names = await readdir(this.folder_path);
-    return new FileModels(this.folder_path, file_names);
+    try {
+      const file_names = await readdir(this.folder_path);
+      return new FileModels(this.folder_path, file_names);
+    } catch (e) {
+      console.debug(
+        `cannot find files in folder: ${this.folder_path}`
+      );
+      return new FileModels(this.folder_path, []);
+    }
   }
 
   async findById(id: string): Promise<FileModel | null> {
@@ -243,8 +250,6 @@ const repository_cache: { [key: string]: FileRepository } = {};
  */
 export default function getRepository(folder_name: string) {
   if (!repository_cache[folder_name]) {
-    console.log('current working directory:', process.cwd())
-    console.log(`folder content: ${readdirSync(`${process.cwd()}/db`)}`)
     const folder_path = `${process.cwd()}/db/${folder_name}`;
     repository_cache[folder_name] = new FileRepository(folder_path);
   }
