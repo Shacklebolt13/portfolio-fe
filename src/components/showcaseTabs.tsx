@@ -1,9 +1,12 @@
 "use client";
 
+import { EXPERIENCE_COLLECTION } from "@/constants/dbconstants";
 import { Model } from "@/db/getRepository";
 import { Card, CardBody, Divider, Tab, Tabs } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 function populateCards(collection_name: string, data: Model) {
   console.log(data?.showcase?.id)
@@ -49,9 +52,39 @@ function populateCardArea(collection_name: string, data: Model[] | undefined) {
   );
 }
 
+function getSelectedTab() {
+  const searchParams = useSearchParams();
+  return searchParams.get("tab") ?? undefined;
+}
+
+
 export default function ShowCaseTabs(props: { data: Map<string, Model[]> }) {
   console.log("invoked showcaseComponent");
   const tabs = new Map<string, JSX.Element>();
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  var selectedTab = getSelectedTab() ?? EXPERIENCE_COLLECTION;
+  var [tab, setTab] = useState(selectedTab);
+
+  const setSelectedTab = (tab: string) => {
+    const newSearchParams = new URLSearchParams(searchParams.toString());
+    newSearchParams.set("tab", tab);
+
+    const newUrl = `${pathname}?${newSearchParams.toString()}`;
+    router.replace(newUrl);
+  }
+
+  useEffect(() => {
+    if (selectedTab === undefined) {
+      setSelectedTab(tab);
+    }
+  });
+
+  useEffect(() => {
+    setSelectedTab(tab);
+  });
 
   const capAndPlurify = (str: string) => {
     return str.charAt(0).toUpperCase() + str.slice(1) + "s";
@@ -73,5 +106,5 @@ export default function ShowCaseTabs(props: { data: Map<string, Model[]> }) {
     );
   });
 
-  return <Tabs>{Array.from(tabs.values())}</Tabs>;
+  return <Tabs defaultSelectedKey={tab} onSelectionChange={(key) => setTab(key.toString())} >{Array.from(tabs.values())}</Tabs>;
 }
