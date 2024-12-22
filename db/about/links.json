@@ -1,15 +1,25 @@
 {
     "related_links": [
         {
-            "title": "Linkedin",
+            "link": "https://github.com/Shacklebolt13/portfolio-fe",
+            "title": "Source Code Of This Website",
+            "icon": "/icons/source.svg"
+        },
+        {
+            "link": "https://github.com/Shacklebolt13/",
+            "title": "My Projects",
+            "icon": "/icons/github.png"
+        },
+        {
+            "title": "My LinkedIn",
             "icon": "/icons/linkedin.png",
             "link": "https://www.linkedin.com/in/gagandeep-singh-bhambrah-16835919a"
         },
         {
-            "link": "https://github.com/Shacklebolt13/",
-            "title": "github",
-            "icon": "/icons/github.png"
+            "link": "mailto:grimmgagan@gmail.com",
+            "title": "Email Me",
+            "icon": "/icons/email.svg"
         }
     ],
-    "title": "Lets Connect !!!"
+    "title": "A little about me"
 }
