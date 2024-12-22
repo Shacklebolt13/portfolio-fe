@@ -244,7 +244,7 @@ const repository_cache: { [key: string]: FileRepository } = {};
 export default function getRepository(folder_name: string) {
   if (!repository_cache[folder_name]) {
     console.log('current working directory:', process.cwd())
-    console.log(`folder content: ${readdirSync(`${process.cwd()}`)}`)
+    console.log(`folder content: ${readdirSync(`${process.cwd()}/db`)}`)
     const folder_path = `${process.cwd()}/db/${folder_name}`;
     repository_cache[folder_name] = new FileRepository(folder_path);
   }
