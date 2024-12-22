@@ -22,12 +22,12 @@ export default function TitleSection({
         <div className="flex flex-row">
           <Image
             alt="Logo"
-            className="object-cover rounded-xl bg-white"
+            className="object-fill rounded-xl bg-white"
             src={data.showcase.icon}
-            width={60}
-            height={60}
+            width={70}
+            height={70}
           />
-          <span className="text-6xl font-bold mx-2">{data.title}</span>
+          <span className="lg:text-5xl md:text-4xl sm-min:text-4xl text-4xl font-bold mx-2">{data.title}</span>
         </div>
         <div className="inline-block">
           <div className="flex flex-col justify-end min-h-full italic text-sm text-gray-400">

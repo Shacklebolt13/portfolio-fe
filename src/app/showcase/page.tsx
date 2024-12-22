@@ -21,7 +21,7 @@ function getAllDisplayData() {
 export default async function Page() {
   return (
     <div className="flex flex-grow">
-      <div className="p-4 flex-col flex-grow">
+      <div className="p-4 flex-col flex-grow max-w-full">
         <ShowCaseTabs data={getAllDisplayData()} />
       </div>
     </div>
