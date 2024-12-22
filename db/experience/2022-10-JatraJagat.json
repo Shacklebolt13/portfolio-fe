@@ -1,0 +1,27 @@
+{
+    "ongoing": false,
+    "organization": "JatraJagat",
+    "showcase": {
+        "icon": "https://play-lh.googleusercontent.com/zy7Z-iz8Ft75cizQhkRFI8Xmkww4_-SHJXf8J7ss3olU9wB6fKFZRoPPcDRJXxCAazo=w240-h480-rw",
+        "description": "Consulted for JatraJagat.",
+        "title": "Consultant @ JatraJagat",
+        "id": "2022-10-JatraJagat"
+    },
+    "title": "Consultant",
+    "blog": [
+        "## Summary\n---\nI was the backend developer for JatraJagat, a ticket booking application for the Odia Play industry. I was responsible for building the backend of the application and making sure that it was scalable and reliable. I also set up the infrastructure for the application and integrated various monitoring tools to keep track of the application's performance. The application was launched successfully but could not gain much traction and we had to shut down the project after a few months.",
+        "## How I got the gig\n---\nA friend of mine was working with the founder of JatraJagat and he introduced me to him. The guy had an idea and wanted to find a team that could help him build it. My friend and I were the first two people to join the team. He would develop the application and I would build the backend.",
+        "## My Journey\n---\nI was the backend developer for the company. I was responsible for building the backend of the application and making sure that it was scalable and reliable. ",
+        "Since I was working full-time, I had to work on the project in my free time. I would spend my evenings and weekends working on the project. To help with the workload, we hired another developer. We shifted the project to a microservices architecture making it easier to manage and scale.",
+        "I was also responsible for setting up the infrastructure for the application. I used AWS to host the application and set up the necessary services to make sure that the application was reliable and scalable.\nWhile development, I created various CI/CD pipelines to automate the deployment process. This helped us to deploy new features quickly and efficiently. Also, I integrated various monitoring tools to keep track of the application's performance and to identify any issues that might arise.",
+        "Read more about the project [here](/project/enrivers-jatrajagat)",
+        "## The Outcome\n---",
+        "The application was launched successfully and was ready for use. We had some news coverage on it as well, [Youtube Video (Odia Language)](https://www.youtube.com/watch?v=Ub1fR7xXblw). ",
+        "The application however, could not gain much traction and we had to shut down the project after a few months. The application was ahead of its time and the market was not ready for it. The application was finally taken down fom the playstore.",
+        "## What I learned\n---\nIt was a great learning experience for me and I got to work on some interesting problems. I also got to learn a lot about building scalable applications and managing infrastructure.",
+        "I gained a lot of experience on devops technologies as well, and since we had a very little funding, I learned how to make the most out of the various resources available to us. ",
+        "Being a microservices architecture, I learned how to manage and scale the services. I also learned how to set up monitoring and alerting systems to keep track of the application's performance."
+    ],
+    "started_on": "2022-09-30T18:30:00.507Z",
+    "ended_on": "2023-06-02T18:30:00.505Z"
+}

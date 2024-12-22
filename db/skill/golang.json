@@ -1,0 +1,12 @@
+{
+    "showcase": {
+        "icon": "/icons/golang.svg",
+        "id": "golang",
+        "description": "My Experience with Go Lang",
+        "title": "Go-Lang"
+    },
+    "blog": [
+        "# please check back later."
+    ],
+    "title": "Go-Lang"
+}

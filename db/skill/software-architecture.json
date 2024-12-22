@@ -1,0 +1,12 @@
+{
+    "title": "Software Architecture",
+    "blog": [
+        "# please check back later."
+    ],
+    "showcase": {
+        "icon": "/icons/architecture.svg",
+        "id": "software-architecture",
+        "title": "Software Architecture",
+        "description": "My Experience with the Python Language"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "showcase": {
+        "icon": "/icons/angular.svg",
+        "id": "angular",
+        "description": "My Experience with Angular",
+        "title": "Angular"
+    },
+    "blog": [
+        "## Intro to Angular\n---",
+        "Angular is a google developed framework for building Single Page Applications. Single Page Applications are those, that only have a single HTML page, and all other pages and content are generated using JavaScript.",
+        "Angular takes a declarative approach to building user interfaces. Meaning, you can define a specific component with a specific behavior, and then import that component anywhere in your application for reuse. This makes Angular a very easy to use and powerful framework for building web applications.",
+        "## My first Angular App\n---",
+        "I learned Angular during an [internship at Calsoft](/experience/2022-07-Calsoft). I built a simple [to-do list application with Angular](https://github.com/Shacklebolt13/todoApp). It was a great learning experience, and I got to learn about the basics of Angular, such as components, services, and routing.",
+        "Later, I even integrated this application with a Spring Boot backend, and it was a great learning experience. I learned about the `HttpClient` module in Angular, and how to make API calls to a backend server. I learned about the `@Injectable` decorator, and how to use services in Angular.",
+        "I also learned about the monadic approach to handling asynchronous operations in Angular. ",
+        "## The Observer Pattern\n---",
+        "Angular uses the Observer pattern to manage data flow in the application. I had never heard of the Observer pattern before, and it was an amazing concept to learn about. The Observer pattern is a behavioral design pattern that defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.",
+        "## Taking it up a notch\n---",
+        "For our semester project, we were building a social media platform. We were already using React and Django, however, I wanted to try Angular. So, I built a clone of the react variant of [Wibrant using Angular](https://github.com/team-d3m0n1k/winbookAngular). It was not complete, as I had to focus on other parts of the project as well, but it was a great learning experience.",
+        "## Key Takeaways\n---",
+        "Angular was my first window into the reactive approach to building web applications. I had never heard of reactive programming before, and Angular was a great introduction to it. I integrated Angular with Spring Boot as well, and it was easy to do so. "
+    ],
+    "title": "Angular"
+}

@@ -1,0 +1,12 @@
+{
+    "blog": [
+        "# please check back later."
+    ],
+    "showcase": {
+        "icon": "/icons/react.svg",
+        "description": "My Experience with the Python Language",
+        "title": "React",
+        "id": "react"
+    },
+    "title": "React"
+}

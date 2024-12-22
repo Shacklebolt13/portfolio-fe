@@ -1,0 +1,12 @@
+{
+    "blog": [
+        "# please check back later."
+    ],
+    "title": "AWS Lambdas",
+    "showcase": {
+        "icon": "/icons/aws-lambda.svg",
+        "title": "AWS Lambdas",
+        "description": "My Experience with the AWS Lambdas",
+        "id": "aws-lambda"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Java",
+    "showcase": {
+        "title": "Java",
+        "id": "java",
+        "description": "My Experience with the Java Language",
+        "icon": "/icons/java.svg"
+    },
+    "blog": [
+        "# please check back later."
+    ]
+}

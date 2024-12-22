@@ -11,6 +11,8 @@ import {
   doc,
   getDoc,
 } from "firebase/firestore";
+import { fsync, readdirSync, readFileSync, writeFileSync } from "fs";
+import { readdir, readFile } from "fs/promises";
 
 /**
  * Represents the different models in the database
@@ -18,6 +20,9 @@ import {
  * on a single page
  */
 export interface Model {
+
+  id: string;
+
   //any heading/project name/job title etc.
   title: string;
 
@@ -66,6 +71,26 @@ export interface Model {
     description: string;
     icon: string;
   };
+}
+
+export class FileModel {
+  _data: Model;
+  constructor(string_data: string) {
+    this._data = JSON.parse(string_data);
+  }
+
+  data() {
+    return this._data;
+  }
+}
+
+export class FileModels {
+  docs: FileModel[];
+  constructor(folder_path: string, file_names: string[]) {
+    this.docs = file_names.map((file_name) => {
+      return new FileModel((readFileSync(`${folder_path}/${file_name}`)).toString());
+    });
+  }
 }
 
 /**
@@ -149,10 +174,47 @@ class BaseRepository {
       );
       return null;
     }
+
+    //if the file by the document id does not exist, create one in db/filename.json
+
+    // try {
+    //   await readFile(`${process.cwd()}/db/${id}.json`)
+    // } catch (e) {
+    //   writeFileSync(`${process.cwd()}/db/${result._key}.json`, JSON.stringify(result.data()))
+    // }
     return result;
   }
 }
 
+class FileRepository {
+  folder_path: string;
+  constructor(folder_path: string) {
+    this.folder_path = folder_path.toLocaleLowerCase();
+  }
+
+  async findAll() {
+    try {
+      const file_names = await readdir(this.folder_path);
+      return new FileModels(this.folder_path, file_names);
+    } catch (e) {
+      console.debug(
+        `cannot find files in folder: ${this.folder_path}`
+      );
+      return new FileModels(this.folder_path, []);
+    }
+  }
+
+  async findById(id: string): Promise<FileModel | null> {
+    try {
+      return new FileModel((await readFile(`${this.folder_path}/${id}.json`)).toString());
+    } catch (e) {
+      console.debug(
+        `cannot find file with id: ${id} in folder: ${this.folder_path}`
+      );
+      return null;
+    }
+  }
+}
 /**
  * Provides a pool of repositories for each collection
  * This is done to avoid creating multiple instances of the same repository
@@ -160,21 +222,36 @@ class BaseRepository {
  *
  * Each collection will have a single instance of the repository
  */
-const repository_cache: { [key: string]: BaseRepository } = {};
+const repository_cache: { [key: string]: FileRepository } = {};
+
+// /**
+//  * This function is used to get a repository for a given collection.
+//  * This will utilize the repository cache to avoid creating multiple instances.
+//  *
+//  * @param collection_name the name of the collection
+//  * @returns a repository for the given collection
+//  */
+// export default function getRepository(collection_name: string) {
+//   if (!repository_cache[collection_name]) {
+//     repository_cache[collection_name] = new BaseRepository(
+//       firestore_app,
+//       collection_name
+//     );
+//   }
+//   return repository_cache[collection_name];
+// }
 
 /**
- * This function is used to get a repository for a given collection.
+ * This function is used to get a repository for a given folder.
  * This will utilize the repository cache to avoid creating multiple instances.
- *
+ * 
  * @param collection_name the name of the collection
  * @returns a repository for the given collection
  */
-export default function getRepository(collection_name: string) {
-  if (!repository_cache[collection_name]) {
-    repository_cache[collection_name] = new BaseRepository(
-      firestore_app,
-      collection_name
-    );
+export default function getRepository(folder_name: string) {
+  if (!repository_cache[folder_name]) {
+    const folder_path = `${process.cwd()}/db/${folder_name}`;
+    repository_cache[folder_name] = new FileRepository(folder_path);
   }
-  return repository_cache[collection_name];
+  return repository_cache[folder_name];
 }

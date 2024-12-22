@@ -1,0 +1,16 @@
+{
+    "ended_on": "2024-09-01T13:10:04.000Z",
+    "ongoing": false,
+    "started_on": "2023-07-03T18:30:00.925Z",
+    "organization": "Calsoft Inc.",
+    "blog": [
+        "# please check back later."
+    ],
+    "title": "Development Engineer",
+    "showcase": {
+        "description": "Contributed as a Development Engineer at Calsoft Inc.",
+        "id": "2023-07-Calsoft",
+        "icon": "/icons/calsoft.png",
+        "title": "Development Engineer @ Calsoft Inc."
+    }
+}

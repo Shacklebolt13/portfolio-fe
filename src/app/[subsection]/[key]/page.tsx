@@ -17,7 +17,7 @@ export async function generateStaticParams() {
     const documentDataList = await repository?.findAll();
     return documentDataList?.docs.map((document) => {
       const data = document.data();
-      return { params: { subsection: subsection, key: data.id } };
+      return { params: { subsection: subsection, key: data.showcase.id } };
     });
   });
 }
