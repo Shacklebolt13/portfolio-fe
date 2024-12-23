@@ -15,7 +15,7 @@
     ],
     "showcase": {
         "title": "Consultant @ Wisbox",
-        "icon": "https://www.wisbox.in/assets/img/png/logo_white.png",
+        "icon": "/icons/wisbox.png",
         "id": "2022-04-Wisbox",
         "description": "Consulted at Wisbox "
     },
