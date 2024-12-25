@@ -26,3 +26,7 @@ export function getAllDisplayData() {
   });
   return collectionDataMap;
 }
+
+export function getChronologicalData(data: Map<string, Model[]>) {
+  return data;
+}

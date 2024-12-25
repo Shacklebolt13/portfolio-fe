@@ -23,6 +23,7 @@
     "next": "latest",
     "next-mdx-remote": "^4.4.1",
     "react": "latest",
+    "react-chrono": "^2.6.1",
     "react-dom": "latest"
   },
   "devDependencies": {
