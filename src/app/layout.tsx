@@ -2,8 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Providers } from "./providers";
 import StaticNavbar from "@/components/staticNavbar";
-import { Fab } from "@/components/fab";
-import getContact from "@/db/getAboutData";
+import getContact from "@/services/dataService";
 
 export const metadata: Metadata = {
   title: "Portfolio",
