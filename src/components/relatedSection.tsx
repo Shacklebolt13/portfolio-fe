@@ -1,5 +1,5 @@
 "use client";
-import { Model } from "@/db/getRepository";
+import { Model } from "@/dtos/server";
 import {
   Accordion,
   AccordionItem,

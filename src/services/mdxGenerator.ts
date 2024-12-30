@@ -1,4 +1,4 @@
-import { Model } from "@/db/getRepository";
+import { Model } from "@/dtos/server";
 import { MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
 import { serialize } from "next-mdx-remote/serialize";
 

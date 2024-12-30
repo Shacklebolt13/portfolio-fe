@@ -1,4 +1,4 @@
-import { Model } from "@/db/getRepository";
+import { Model } from "@/dtos/server";
 import {
   Avatar,
   Modal,

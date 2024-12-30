@@ -14,7 +14,7 @@ import NextLink from "next/link";
 
 import { PROFILE_PICTURE_FILE_NAME } from "@/constants/public-assets";
 import ContactModal from "./contactModal";
-import { Model } from "@/db/getRepository";
+import { Model } from "@/dtos/server";
 
 export default function StaticNavbar({
   contactDetail,

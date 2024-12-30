@@ -27,5 +27,15 @@
         "There was a time when I slackened off, and I was not able to deliver as per the requirements. The CEO treated me very nicely, and he helped me to get back on track. He motivated me, and he helped me to deliver the product as per the requirements."
     ],
     "organization": "RethinkUX",
-    "title": "SDE Intern"
+    "title": "SDE Intern",
+    "chronology": {
+        "title": "Started Working as an SDE Intern at Rethink UX",
+        "subtitle": "A short desc about my work at Rethink UX",
+        "media": {
+            "type": "IMAGE",
+            "source": {
+                "url": "/images/rethinkux.jpg"
+            }
+        }
+    }
 }
