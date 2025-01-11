@@ -1,4 +1,4 @@
-import { Model } from "@/dtos/server";
+import { Model } from "@/dtos/raw-data";
 import {
   Avatar,
   Modal,

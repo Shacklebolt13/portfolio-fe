@@ -29,13 +29,9 @@
     "organization": "RethinkUX",
     "title": "SDE Intern",
     "chronology": {
-        "title": "Started Working as an SDE Intern at Rethink UX",
-        "subtitle": "A short desc about my work at Rethink UX",
-        "media": {
-            "type": "IMAGE",
-            "source": {
-                "url": "/images/rethinkux.jpg"
-            }
+        "item": {
+            "cardTitle": "Rethink UX",
+            "cardSubtitle": "Worked as an SDE Intern at Rethink UX. Click to know more."
         }
     }
 }

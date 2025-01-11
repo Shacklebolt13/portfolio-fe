@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+import { TimelineItemModel } from "react-chrono/dist/models/TimelineItemModel";
 import { Media } from "react-chrono/dist/models/TimelineMediaModel";
 
 /**
@@ -59,11 +60,7 @@ export interface Model {
         icon: string;
     };
 
-    chronology: {
-        title: string;
-        subtitle: string;
-        media?: Media;
-    }
+    chronology: ChronologyItemContainer;
 }
 
 export class FileModel {
@@ -84,4 +81,11 @@ export class FilesModel {
             return new FileModel((readFileSync(`${folder_path}/${file_name}`)).toString());
         });
     }
+}
+
+export type ChronologyItemContainer = {
+    item: TimelineItemModel;
+    classNames?: string;
+    icon: string;
+    group?: string;
 }

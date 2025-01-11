@@ -1,7 +1,7 @@
 "use client";
 
 import { EXPERIENCE_COLLECTION } from "@/constants/dbconstants";
-import { Model } from "@/dtos/server";
+import { Model } from "@/dtos/raw-data";
 import { Card, CardBody, Divider, Tab, Tabs } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";

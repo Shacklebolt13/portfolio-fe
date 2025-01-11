@@ -1,4 +1,4 @@
-import { FileModel, FilesModel } from "@/dtos/server";
+import { FileModel, FilesModel } from "@/dtos/raw-data";
 import { readdir, readFile } from "fs/promises";
 
 class FileRepository {

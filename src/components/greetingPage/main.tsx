@@ -1,7 +1,7 @@
 import { getChronologicalData } from "@/services/dataService";
 import Chronology from "../chronology";
 import Intro from "./intro";
-import { Model } from "@/dtos/server";
+import { Model } from "@/dtos/raw-data";
 
 export default function GreetingPage({ data }: { data: Map<string, Model[]> }) {
   return (
@@ -9,7 +9,7 @@ export default function GreetingPage({ data }: { data: Map<string, Model[]> }) {
       <div className="m-4 flex flex-col min-h-screen max-h-screen justify-center">
         <Intro />
       </div>
-      <Chronology timelineItems={getChronologicalData(data)} />
+      <Chronology itemContainers={getChronologicalData(data)} />
     </>
   );
 }

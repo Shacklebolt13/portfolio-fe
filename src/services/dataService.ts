@@ -5,7 +5,8 @@ import {
 } from "@/constants/dbconstants";
 import getRepository from "../db/getRepository";
 import { TimelineItemModel } from "react-chrono/dist/models/TimelineItemModel";
-import { Model } from "@/dtos/server";
+import { ChronologyItemContainer, Model } from "@/dtos/raw-data";
+import { showDate } from "@/utils/converters";
 
 export default async function getContact() {
   return (
@@ -29,22 +30,18 @@ export function getAllDisplayData() {
   return collectionDataMap;
 }
 
-export function getChronologicalData(data: Map<string, Model[]>): TimelineItemModel[] {
-  return Array.from(data.values()).flat()
-    .filter((val) => {
-      return val.chronology !== undefined
-    })
-    .sort((a, b) => {
-      if (a.started_on === undefined && b.started_on === undefined) return 0;
-      if (a.started_on === undefined) return 1;
-      if (b.started_on === undefined) return -1;
-      return new Date(a.started_on).getTime() - new Date(b.started_on).getTime();
-    }).map((val) => {
-      return {
-        date: val.started_on,
-        title: val.showcase.title,
-        cardTitle: val.showcase.title,
-        cardSubtitle: `A column of Red Army prisoners taken during the first days of the German invasion`,
+export function getChronologicalData(allData: Map<string, Model[]>): ChronologyItemContainer[] {
+  var chronologyItemContainers: ChronologyItemContainer[] = new Array();
+  allData.forEach((instances, key) => {
+    const base_url = `/${key}`;
+    instances.forEach((instance) => {
+      if (instance.chronology) {
+        instance.chronology.item.url = `${base_url}/${instance.showcase.id}`;
+        instance.chronology.item.title = instance.started_on?.toString()
+        instance.chronology.icon = instance.showcase.icon;
+        chronologyItemContainers.push(instance.chronology);
       }
     });
+  });
+  return chronologyItemContainers;
 }
