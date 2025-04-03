@@ -15,10 +15,11 @@ const nextConfig = {
       "www.wisbox.in",
       "fontawesome.com",
       "www.svgrepo.com",
-      "www.braneenterprises.com"
+      "www.braneenterprises.com",
     ],
-    dangerouslyAllowSVG : true
+    dangerouslyAllowSVG: true,
   },
+  output: "export",
 };
 
 module.exports = withMDX(nextConfig);

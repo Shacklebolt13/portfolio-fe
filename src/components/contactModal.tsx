@@ -1,4 +1,4 @@
-import { Model } from "@/db/getRepository";
+import { Model } from "@/schema/Model";
 import {
   Avatar,
   Modal,
@@ -7,7 +7,7 @@ import {
   ModalFooter,
   ModalHeader,
   useDisclosure,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import Link from "next/link";
 
 export default function ContactModal({

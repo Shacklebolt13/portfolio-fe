@@ -1,7 +1,6 @@
 import ShowCaseTabs from "@/components/showcaseTabs";
 import {
   getAllDisplayData,
-  getDocumentListForCards,
 } from "@/services/dataService";
 export default async function Page() {
   return (

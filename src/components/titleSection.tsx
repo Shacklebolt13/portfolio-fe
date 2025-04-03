@@ -1,6 +1,5 @@
+import { Model } from "@/schema/Model";
 import { showDate } from "@/utils/converters";
-import { Model } from "@/db/getRepository";
-import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 export default function TitleSection({
   data,

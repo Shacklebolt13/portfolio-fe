@@ -3,7 +3,8 @@ import {
   CONTACT_COLLECTION,
   TABULATED_COLLECTIONS,
 } from "@/constants/dbconstants";
-import getRepository, { Model } from "../db/getRepository";
+import getRepository from "../db/fileRepository";
+import { Model } from "@/schema/Model";
 
 export default async function getContact() {
   return (

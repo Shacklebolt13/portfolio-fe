@@ -1,6 +1,6 @@
 import { BASE_URL } from "@/constants/appConstants";
 import { TABULATED_COLLECTIONS } from "@/constants/dbconstants";
-import getRepository from "@/db/getRepository";
+import getRepository from "@/db/fileRepository";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

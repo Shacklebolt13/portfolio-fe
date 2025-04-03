@@ -5,16 +5,12 @@ import {
   Avatar,
   NavbarContent,
   Button,
-  Dropdown,
-  DropdownItem,
-  DropdownTrigger,
-  DropdownMenu,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import NextLink from "next/link";
 
 import { PROFILE_PICTURE_FILE_NAME } from "@/constants/public-assets";
 import ContactModal from "./contactModal";
-import { Model } from "@/db/getRepository";
+import { Model } from "@/schema/Model";
 
 export default function StaticNavbar({
   contactDetail,
@@ -38,7 +34,7 @@ export default function StaticNavbar({
           <>
             <Button
               // onPress={contactModal.onOpen}
-              onClick={contactModal.onOpen}
+              onPress={contactModal.onOpen}
               variant="bordered"
               color="primary"
             >

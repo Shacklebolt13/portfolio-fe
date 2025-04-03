@@ -1,5 +1,5 @@
 "use client";
-import { Model } from "@/db/getRepository";
+import { Model } from "@/schema/Model";
 import {
   Accordion,
   AccordionItem,
@@ -9,7 +9,7 @@ import {
   CardBody,
   CardHeader,
   User,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 

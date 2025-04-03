@@ -1,8 +1,8 @@
 "use client";
 
 import { EXPERIENCE_COLLECTION } from "@/constants/dbconstants";
-import { Model } from "@/db/getRepository";
-import { Card, CardBody, Divider, Tab, Tabs } from "@nextui-org/react";
+import { Model } from "@/schema/Model";
+import { Card, CardBody, Divider, Tab, Tabs } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";

@@ -3,7 +3,7 @@ import generateMdxArray from "@/services/mdxGenerator";
 import RelatedSection from "@/components/relatedSection";
 import TitleSection from "@/components/titleSection";
 
-import getRepository from "@/db/getRepository";
+import getRepository from "@/db/fileRepository";
 import { notFound } from "next/navigation";
 import { AVAILABLE_SUBSECTIONS } from "@/constants/availableSubsections";
 
@@ -11,16 +11,24 @@ const available_sections = Object.entries(AVAILABLE_SUBSECTIONS).map(
   ([key, value]) => key
 );
 
-export async function generateStaticParams() {
-  return available_sections.map(async (subsection) => {
-    const repository = getRepository(subsection);
-    const documentDataList = await repository?.findAll();
-    return documentDataList?.docs.map((document) => {
-      const data = document.data();
-      return { params: { subsection: subsection, key: data.showcase.id } };
-    });
-  });
-}
+// export function generateStaticParams() {
+//   return [{
+//     params: {
+//       subsection: "test",
+//       key: "test"
+//     }
+//   }]
+// }
+// export async function generateStaticParams() {
+//   return available_sections.map(async (subsection) => {
+//     const repository = getRepository(subsection);
+//     const documentDataList = await repository?.findAll();
+//     return documentDataList?.docs.map((document) => {
+//       const data = document.data();
+//       return { params: { subsection: subsection, key: data.showcase.id } };
+//     });
+//   });
+// }
 
 export default async function Page({ params, searchParams }) {
   if (!available_sections.includes(params.subsection)) {
