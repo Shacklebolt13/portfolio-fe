@@ -40,6 +40,12 @@ export function getDisplayData(): Map<string, TabModel[]> {
         id: "2019-B.TECH-GIETU",
         description: "Graduated from GIET University, Gunupur with a CGPA of 8.2",
       },
+      {
+        icon: "/icons/dems.png",
+        title: "Higher Secondary Education",
+        id: "2017-HSC-DEMS",
+        description: "Completed my HSC from Deepika English Medium School with a percentage of 75.6%",
+      }
     ],
     [EXPERIENCE_SUBSECTION]: [
       {
