@@ -15,9 +15,8 @@ export default function Page() {
                     height: 50,
                     width: 55
                 }}
-                title="Sde Intern"
+                title="SDE Intern"
             />
-            <hr className="my-2" />
             <Blog />
             <RelatedSection />
         </div>

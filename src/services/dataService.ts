@@ -50,7 +50,7 @@ export function getDisplayData(): Map<string, TabModel[]> {
     [EXPERIENCE_SUBSECTION]: [
       {
         id: "2021-08-RethinkUX",
-        title: "Sde intern @ Rethink UX",
+        title: "SDE intern @ Rethink UX",
         icon: "/icons/rethinkux.png",
         description: "Interned as an SDE Intern at Rethink UX"
       },
@@ -61,10 +61,10 @@ export function getDisplayData(): Map<string, TabModel[]> {
         title: "Consultant @ Brane Enterprises"
       },
       {
-        title: "Consultant @ Wisbox",
+        title: "Co-Founded @ Wisbox",
         icon: "/icons/wisbox.png",
         id: "2022-04-Wisbox",
-        description: "Consulted at Wisbox "
+        description: "Co-Founded Wisbox and worked as a CTO."
       },
       {
         description: "Interned as an SDE Intern at Calsoft Inc.",

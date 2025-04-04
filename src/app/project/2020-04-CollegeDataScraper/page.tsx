@@ -27,7 +27,7 @@ export default function Page() {
                 }}
                 title="GIETU Attendance Scraper"
             />
-            <div className="flex flex-col flex-grow p-4 overflow-scroll scrollbar-hide max-h-[65vh]">
+            <div className="flex flex-col flex-grow p-4 overflow-scroll scrollbar-hide max-h-[62vh]">
                 {lorem.generateParagraphs(71).split("\n").map((para, index) => (
                     <p key={index}>
                         {para}

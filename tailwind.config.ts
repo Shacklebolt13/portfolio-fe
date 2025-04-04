@@ -61,7 +61,7 @@ const config: Config = {
             content2: "#fff",
             content3: "#fff",
             content4: "#fff",
-            divider: "magenta",
+            divider: "#2dd4bf",
             focus: "#3d3d3d",
             overlay: "black",
           },
