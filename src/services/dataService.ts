@@ -99,7 +99,7 @@ export function getDisplayData(): Map<string, TabModel[]> {
         "description": "Brute forced college captive portal using python and android."
       }, {
         "id": "2020-04-CollegeDataScraper",
-        "title": "College Data Scraper",
+        "title": "GIETU Attendance Scraper",
         "description": "Created a attendance scraper to fetch attendance, marks, profile etc. from our college website.",
         "icon": "/icons/giet.png"
       }, {

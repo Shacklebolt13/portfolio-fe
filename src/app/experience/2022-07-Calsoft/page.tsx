@@ -17,14 +17,15 @@ export default function Page() {
     return (
         <div className="flex flex-col flex-grow">
             <TitleSection
-                organization="Deepika English Medium School"
-                started_on={new Date("2017-08-01")}
+                organization="Calsoft Inc."
+                started_on={new Date("2022-07-03")}
+                ended_on={new Date("2023-07-03")}
                 logo={{
-                    icon: "/icons/dems.png",
+                    icon: "/icons/calsoft.png",
                     height: 50,
                     width: 55
                 }}
-                title="Higher Secondary Education"
+                title="SDE Intern"
             />
             <div className="flex flex-col flex-grow p-4 overflow-scroll scrollbar-hide max-h-[65vh]">
                 {lorem.generateParagraphs(71).split("\n").map((para, index) => (
