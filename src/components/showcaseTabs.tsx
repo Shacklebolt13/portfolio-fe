@@ -95,7 +95,7 @@ export default function ShowCaseTabs(props: { data: Map<string, TabModel[]> }) {
   });
 
   return <Tabs
-    className="max-w-full"
+    className="min-w-full inline-flex flex-col"
     defaultSelectedKey={tab}
     onSelectionChange={(key) => {
       setTab(key.toString())
