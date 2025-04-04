@@ -36,7 +36,7 @@ export default function ContactModal({
                 Please feel free to check out my github and reach out using below links.
 
               </ModalBody>
-              <ModalFooter>
+              <ModalFooter className="flex flex-row min-w-full justify-between">
                 {contactDetail?.related_links.map((linkDetail) => (
                   <Avatar
                     src={linkDetail.icon}
@@ -46,6 +46,7 @@ export default function ContactModal({
                     as={Link}
                     target="_blank"
                     href={linkDetail.link ?? "#"}
+                    className="hover:scale-125 transition-all duration-200"
                   />
                 ))}
               </ModalFooter>

@@ -15,7 +15,7 @@ export default function getContact() {
       {
         link: "https://github.com/Shacklebolt13/",
         title: "My Projects",
-        icon: "/icons/github.png"
+        icon: "/icons/github.svg"
       },
       {
         title: "My LinkedIn",
