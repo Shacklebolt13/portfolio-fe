@@ -23,7 +23,7 @@ export default function getContact() {
         link: "https://www.linkedin.com/in/gdsbhambrah"
       },
       {
-        link: "mailto:grimmgagan@gmail.com",
+        link: "mailto:gdsbhambrah@gmail.com",
         title: "Email Me",
         icon: "/icons/email.svg"
       }
