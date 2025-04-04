@@ -1,6 +1,6 @@
 "use client";
 
-import { EXPERIENCE_SUBSECTION } from "@/constants/subsections";
+import { EDUCATION_SUBSECTION, EXPERIENCE_SUBSECTION } from "@/constants/subsections";
 import { TabModel } from "@/schema/TabModel";
 import { Card, CardBody, Divider, Tab, Tabs } from "@heroui/react";
 import Image from "next/image";
@@ -63,27 +63,16 @@ export default function ShowCaseTabs(props: { data: Map<string, TabModel[]> }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const getSelectedTab = () => searchParams.get("tab") ?? undefined;
+
   const setSelectedTab = (tab: string) => {
     const newSearchParams = new URLSearchParams(searchParams.toString());
     newSearchParams.set("tab", tab);
-
     const newUrl = `${pathname}?${newSearchParams.toString()}`;
     router.replace(newUrl);
   }
 
-  var selectedTab = getSelectedTab() ?? EXPERIENCE_SUBSECTION;
+  var selectedTab = searchParams.get("tab") ?? EDUCATION_SUBSECTION;
   var [tab, setTab] = useState(selectedTab);
-
-  useEffect(() => {
-    if (selectedTab === undefined) {
-      setSelectedTab(tab);
-    }
-  });
-
-  useEffect(() => {
-    setSelectedTab(tab);
-  });
 
   const capAndPluralize = (str: string) => {
     return str.charAt(0).toUpperCase() + str.slice(1) + "s";
@@ -105,5 +94,14 @@ export default function ShowCaseTabs(props: { data: Map<string, TabModel[]> }) {
     );
   });
 
-  return <Tabs className="max-w-full" defaultSelectedKey={tab} onSelectionChange={(key) => setTab(key.toString())} >{Array.from(tabs.values())}</Tabs>;
+  return <Tabs
+    className="max-w-full"
+    defaultSelectedKey={tab}
+    onSelectionChange={(key) => {
+      setTab(key.toString())
+      setSelectedTab(key.toString())
+    }}
+  >
+    {Array.from(tabs.values())}
+  </Tabs>;
 }
