@@ -8,14 +8,13 @@ import {
 } from "@heroui/react";
 import NextLink from "next/link";
 
-import { PROFILE_PICTURE_FILE_NAME } from "@/constants/public-assets";
 import ContactModal from "./contactModal";
-import { Model } from "@/schema/Model";
+import { ContactModel } from "@/schema/ContactModel";
 
 export default function StaticNavbar({
   contactDetail,
 }: {
-  contactDetail?: Model;
+  contactDetail?: ContactModel;
 }) {
   const contactModal = ContactModal({ contactDetail });
 
@@ -24,7 +23,7 @@ export default function StaticNavbar({
       <NavbarBrand>
         <Avatar
           as={NextLink}
-          src={`/${PROFILE_PICTURE_FILE_NAME}`}
+          src={`/dp.jpg`}
           size="md"
           href="/"
           color="primary"
@@ -33,7 +32,6 @@ export default function StaticNavbar({
         <NavbarContent justify="end">
           <>
             <Button
-              // onPress={contactModal.onOpen}
               onPress={contactModal.onOpen}
               variant="bordered"
               color="primary"

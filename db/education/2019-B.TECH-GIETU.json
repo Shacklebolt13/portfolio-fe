@@ -1,0 +1,16 @@
+{
+    "started_on": "2019-11-30T18:30:00.755Z",
+    "organization": "Personal",
+    "ongoing": false,
+    "showcase": {
+        "icon": "/icons/pentest.png",
+        "title": "Captive Portal Pentest",
+        "id": "2019-B.TECH-GIETU",
+        "description": "Brute forced college captive portal using python and android."
+    },
+    "ended_on": "2020-03-25T18:30:00.197Z",
+    "blog": [
+        "## Summary\n---"
+    ],
+    "title": "Captive Portal Pentest"
+}

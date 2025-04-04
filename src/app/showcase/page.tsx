@@ -1,12 +1,16 @@
+"use client";
 import ShowCaseTabs from "@/components/showcaseTabs";
 import {
-  getAllDisplayData,
+  getDisplayData,
 } from "@/services/dataService";
-export default async function Page() {
+import { Suspense } from "react";
+export default function Page() {
   return (
     <div className="flex flex-grow">
       <div className="p-4 flex-col flex-grow max-w-full">
-        <ShowCaseTabs data={getAllDisplayData()} />
+        <Suspense>
+          <ShowCaseTabs data={getDisplayData()} />
+        </Suspense>
       </div>
     </div>
   );

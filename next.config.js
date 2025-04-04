@@ -20,6 +20,9 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
   },
   output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = withMDX(nextConfig);

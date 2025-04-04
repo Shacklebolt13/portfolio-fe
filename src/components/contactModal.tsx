@@ -1,19 +1,12 @@
-import { Model } from "@/schema/Model";
-import {
-  Avatar,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  useDisclosure,
-} from "@heroui/react";
+"use client";
+import { ContactModel } from "@/schema/ContactModel";
+import { Avatar, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@heroui/react";
 import Link from "next/link";
 
 export default function ContactModal({
   contactDetail,
 }: {
-  contactDetail?: Model;
+  contactDetail?: ContactModel;
 }) {
   const modalControl = useDisclosure();
 
@@ -22,8 +15,10 @@ export default function ContactModal({
       <Modal
         isOpen={modalControl.isOpen}
         onOpenChange={modalControl.onOpenChange}
+        backdrop="blur"
         size="sm"
         isDismissable
+        hideCloseButton={true}
       >
         <ModalContent>
           {(onClose) => (
