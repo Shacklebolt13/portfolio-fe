@@ -55,7 +55,7 @@ export default function StaticNavbar({
             variant="bordered"
             color="primary"
             download={true}
-            href="/gagandeep_resume.md.pdf"
+            href="/gagandeep_resume.pdf"
           >
             Resume
           </Button>
