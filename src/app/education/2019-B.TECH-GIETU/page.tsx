@@ -1,6 +1,6 @@
 "use client";
-import RelatedSection from "@/components/detail/RelatedSection";
-import TitleSection from "@/components/detail/TitleSection";
+import RelatedSection from "@/components/detail/Related";
+import TitleSection from "@/components/detail/Title";
 import { LoremIpsum } from "lorem-ipsum";
 
 export default function Page() {
