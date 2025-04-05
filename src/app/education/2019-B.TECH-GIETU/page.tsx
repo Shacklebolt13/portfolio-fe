@@ -2,18 +2,9 @@
 import RelatedSection from "@/components/detail/Related";
 import TitleSection from "@/components/detail/Title";
 import { LoremIpsum } from "lorem-ipsum";
+import Blog from "./blog";
 
 export default function Page() {
-    const lorem = new LoremIpsum({
-        sentencesPerParagraph: {
-            max: 8,
-            min: 4
-        },
-        wordsPerSentence: {
-            max: 16,
-            min: 4
-        }
-    });
     return (
         <div className="flex flex-col flex-grow">
             <TitleSection
@@ -24,14 +15,7 @@ export default function Page() {
                 }}
                 title="B.TECH CSE"
             />
-            <div className="flex flex-col flex-grow p-4 overflow-scroll scrollbar-hide max-h-[62vh]">
-                {lorem.generateParagraphs(71).split("\n").map((para, index) => (
-                    <p key={index}>
-                        {para}
-                    </p>
-                ))
-                }
-            </div>
+            <Blog />
             <RelatedSection />
 
         </div>
