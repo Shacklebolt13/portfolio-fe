@@ -1,8 +1,26 @@
-"use client";
 import RelatedSection from "@/components/detail/Related";
 import TitleSection from "@/components/detail/Title";
-import { LoremIpsum } from "lorem-ipsum";
 import Blog from "./blog";
+
+
+export const metadata = {
+    title: "Consultant | Brane Enterprises",
+    description: "Consultant at Brane Enterprises",
+    openGraph: {
+        title: "Consultant | Brane Enterprises",
+        description: "Consultant at Brane Enterprises",
+        images: [
+            {
+                url: "/icons/brane.png",
+                width: 50,
+                height: 55,
+                alt: "Brane Enterprises Logo"
+            }
+        ],
+        locale: "en_US",
+        type: "website"
+    }
+}
 
 export default function Page() {
     return (

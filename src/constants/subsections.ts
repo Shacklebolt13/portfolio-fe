@@ -1,5 +1,3 @@
-"use client";
-
 export const EXPERIENCE_SUBSECTION = "experience";
 export const PROJECT_SUBSECTION = "project";
 export const EDUCATION_SUBSECTION = "education";

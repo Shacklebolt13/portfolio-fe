@@ -1,8 +1,26 @@
-"use client";
 import RelatedSection from "@/components/detail/Related";
 import TitleSection from "@/components/detail/Title";
-import { LoremIpsum } from "lorem-ipsum";
 import Blog from "./blog";
+
+
+export const metadata = {
+    title: "B.TECH | GIET University",
+    description: "B.TECH in Computer Science and Engineering at GIET University",
+    openGraph: {
+        title: "B.TECH | GIET University",
+        description: "B.TECH in Computer Science and Engineering at GIET University",
+        images: [
+            {
+                url: "/icons/giet.png",
+                width: 50,
+                height: 55,
+                alt: "GIET University Logo"
+            }
+        ],
+        locale: "en_US",
+        type: "website"
+    }
+}
 
 export default function Page() {
     return (

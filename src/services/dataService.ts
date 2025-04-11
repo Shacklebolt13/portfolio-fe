@@ -1,4 +1,3 @@
-"use client";
 import { EDUCATION_SUBSECTION, EXPERIENCE_SUBSECTION, PROJECT_SUBSECTION, SKILL_SUBSECTION } from "@/constants/subsections";
 import { ContactModel } from "@/schema/ContactModel";
 import { TabModel } from "@/schema/TabModel";

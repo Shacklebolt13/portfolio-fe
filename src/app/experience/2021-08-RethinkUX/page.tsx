@@ -1,7 +1,25 @@
-"use client";
 import RelatedSection from "@/components/detail/Related";
 import TitleSection from "@/components/detail/Title";
 import Blog from "./blog";
+
+export const metadata = {
+    title: "SDE Intern | Rethink UX",
+    description: "Software Development Engineer Intern at Rethink UX",
+    openGraph: {
+        title: "SDE Intern | Rethink UX",
+        description: "Software Development Engineer Intern at Rethink UX",
+        images: [
+            {
+                url: "/icons/rethinkux.png",
+                width: 50,
+                height: 55,
+                alt: "Rethink UX Logo"
+            }
+        ],
+        locale: "en_US",
+        type: "website"
+    }
+}
 
 export default function Page() {
     return (

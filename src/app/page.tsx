@@ -1,5 +1,20 @@
-"use client";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Gagandeep Singh Bhambrah | Portfolio",
+  description: "Hi, I am Gagandeep Singh Bhambrah, a Backend developer. Check out my portfolio to know more about me.",
+  openGraph: {
+    title: "Gagandeep Singh Bhambrah | Portfolio",
+    description: "Hi, I am Gagandeep Singh Bhambrah, a Backend developer. Check out my portfolio to know more about me.",
+    images: [
+      {
+        url: "/dp.jpg",
+        width: 800,
+        height: 600,
+      },
+    ],
+  }
+};
 
 export default function Home() {
   return (

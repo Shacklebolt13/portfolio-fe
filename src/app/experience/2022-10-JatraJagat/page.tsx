@@ -1,10 +1,28 @@
-"use client";
 import RelatedSection from "@/components/detail/Related";
 import TitleSection from "@/components/detail/Title";
-import { LoremIpsum } from "lorem-ipsum";
 import Blog from "./blog";
 
-export default function Page() {
+
+export const metadata = {
+    title: "Consultant | JatraJagat",
+    description: "Consultant at JatraJagat",
+    openGraph: {
+        title: "Consultant | JatraJagat",
+        description: "Consultant at JatraJagat",
+        images: [
+            {
+                url: "/icons/jatrajagat.webp",
+                width: 50,
+                height: 55,
+                alt: "JatraJagat Logo"
+            }
+        ],
+        locale: "en_US",
+        type: "website"
+    }
+}
+
+export default async function Page() {
     return (
         <div className="flex flex-col flex-grow">
             <TitleSection
