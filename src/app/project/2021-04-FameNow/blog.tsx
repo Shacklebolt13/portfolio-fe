@@ -1,0 +1,57 @@
+"use client";
+
+import BlogHeading from "@/components/blog/BlogHeading";
+import BlogText from "@/components/blog/BlogText";
+import { Spacer } from "@heroui/react";
+
+export default function Blog() {
+    return (
+        <div className="flex flex-col flex-grow p-4 overflow-scroll scrollbar-hide max-h-[62vh]">
+
+            <BlogHeading text="Summary" />
+            <BlogText>
+                {"During the lockdown, I had to take part in a paid internship cum training program. I had no laptop, and had to use my phone to connect to my old computer to work on the project. I had to change my course to Django, and was able to complete the project in time. I was the only one who was able to complete the project, and even helped others in completing their projects."}
+            </BlogText>
+            <Spacer y={5} />
+
+            <BlogHeading text="Scenaio" />
+            <BlogText>
+                <p className="my-2">{"I was in my second year of college when, the Corona Virus outbreak had forced the college to shut down and all classes were now being conducted online. The college had forced us to take part in a paid internship cum training program. There were 2 providers for the same, Era Interfaces and another company, I can't remember the name of."}</p>
+                <p className="my-2">{"Era had a wide range of courses, like Flutter, Django, Mern, Mean, etc, but it costed more, around 4k. The other company had only one course for Power BI and it costed 2k."}</p>
+                <p className="my-2">{"At that time, I was really into Android Development, and this was the early days of Flutter. I had been learning Flutter myself for some time and thought this would really benefit me. But unfortunately... my laptop decided otherwise."}</p>
+                <p className="my-2">{"My laptop's GPU fan got busted and I had to get it repaired, and to the greatest of my misfortune, the repair guy blew up my motherboard. I had to get it replaced and since everything was on lockdown, I had to wait for a month to get it replaced."}</p>
+                <p className="my-2">{"The training was about to start in a week and I had no laptop. I had a very old computer at home, which was running windows xp, and would not be able to handle the load of Flutter."}</p>
+            </BlogText>
+            <Spacer y={5} />
+
+            <BlogHeading text="KALI to the rescue" />
+            <BlogText>
+                <p className="my-2">{"Fortunately, I had invested in a phone, the POCO F1, which was a beast in terms of performance. I rooted it, installed Kali Nethunter, and was now running a functional ARM version of Kali Linux on my phone. Still, I had no hub to connect keyboard and mouse to my phone, screen was very small, and I had no way to connect it to a bigger screen. Due to Lockdown, I couldn't even get a hub delivered to my home in time."}</p>
+                <p className="my-2">{"I had learned about VNC when I was learning about Kali, and thought of using it to connect my phone to my computer. I installed a VNC server on my phone, and a VNC client on my computer. I connected my phone to my computer via USB, and started the VNC server on my phone. I connected to the server from my computer, and now I had a bigger screen to work on."}</p>
+                <p className="my-2">{"Even though it was faster, but it would still not be able to handle flutter, so I had to change my course to Django, which I had no prior knowledge of. I honestly didn't like web development, as I thought it was an easy way out, but I had no other option."}</p>
+                <p className="my-2">{"Even though it was faster, but it would still not be able to handle flutter, so I had to change my course to Django, which I had no prior knowledge of. I honestly didn't like web development, as I thought it was an easy way out, but I had no other option."}</p>
+            </BlogText>
+            <Spacer y={5} />
+
+            <BlogHeading text="Fame Now : A social media platform" />
+            <BlogText>
+                <p className="my-2">{"I had 0 idea of what backends were, what APIs were, and what Django was. I started with the basics, and the training was really good. The trainer was really good, and I was able to understand the concepts easily."}</p>
+                <p className="my-2">{"We were divided into teams of 5 and were supposed to make a social media platform. There were about 3 teams in total, and we were given 2 weeks to complete the project. We had standups every other day, and were supposed to show our progress to the trainer."}</p>
+                <p className="my-2">{"I put it on Github, for everyone to collaborate on, But unfortunately, no one in my team was really interested in the project, and I had to do everything myself. The final project was a django-based social media platform. It used django views to render the pages. I took some website templates from the internet, and used them to make the website look good."}</p>
+                <p className="my-2">{"It had a basic login page, a feed page, a profile page, and an explore page. The feed page showed posts from people you followed, the profile page showed your posts, along with your profile picture, bio etc. and the explore page showed posts from people you didn't follow."}</p>
+                <p className="my-2">{"It followed an instagram-like structure, where you could follow people, like their posts, etc. Comments were not implemented, as I didn't have enough time to implement them."}</p>
+                <p className="my-2">{"To my surprise, no other team was even able to complete the project, and I was the only one who had a working project. I even helped the other teams in completing their projects, and they were able to complete it in time."}</p>
+            </BlogText>
+            <Spacer y={5} />
+
+            <BlogHeading text="Conclusion" />
+            <BlogText>
+                <p className="my-2">{"The training was really good, and I learned a lot about Django. I was able to complete the project in time, and it was a success."}</p>
+                <p className="my-2">{"I even hosted the project on heroku, and was able to show it to my friends. I was really happy with the outcome, and it was a great learning experience for me. I was able to learn a lot about Django, and it really helped me in my future projects."}</p>
+                <p className="my-2">{"I was able to help others in completing their projects as well. I was really happy with the outcome, and it was a great learning experience for me. I was able to learn a lot about Django, and it really helped me in my future projects."}</p>
+            </BlogText>
+            <Spacer y={5} />
+
+        </div >
+    )
+}
