@@ -5,18 +5,7 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
   images: {
-    domains: [
-      "media.licdn.com",
-      "play-lh.googleusercontent.com",
-      "img.freepik.com",
-      "hacktronian.in",
-      "www.scraping-bot.io",
-      "www.calsoftinc.com",
-      "www.wisbox.in",
-      "fontawesome.com",
-      "www.svgrepo.com",
-      "www.braneenterprises.com",
-    ],
+    domains: [],
     dangerouslyAllowSVG: true,
   },
   output: "export",

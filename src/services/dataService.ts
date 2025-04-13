@@ -115,7 +115,7 @@ export function getDisplayData(): Map<string, TabModel[]> {
         "title": "Smart Home Application Backend",
         "description": "Built a real time backend for a smart home application",
         "id": "2022-03-SmartHomeAppBackend",
-        "icon": "https://img.freepik.com/premium-vector/smarthome_46706-1195.jpg"
+        "icon": "/icons/smarthome.avif"
       }, {
         "icon": "/icons/ecommerce.svg",
         "description": "Built an E-Commerce Platform for Wisbox",
