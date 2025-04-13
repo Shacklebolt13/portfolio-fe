@@ -1,4 +1,3 @@
-const withMDX = require("@next/mdx")();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Configure `pageExtensions` to include MDX files
@@ -12,6 +11,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,
 };
 
-module.exports = withMDX(nextConfig);
+module.exports = nextConfig;
