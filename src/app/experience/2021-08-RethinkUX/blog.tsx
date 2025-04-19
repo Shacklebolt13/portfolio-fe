@@ -9,7 +9,7 @@ export default function Blog() {
         <div className="flex flex-col flex-grow p-4 overflow-scroll scrollbar-hide max-h-[62vh]">
             <BlogHeading text="Summary" />
             <BlogText>
-                {"I Worked at Rethink UX as A Software Development Intern for 6 Months.I used various Tools and Technologies namely: WordPress, Python, JavaScript, Django, Chalice, AWS and NodeJs.I worked to develop internal tools, various backend and frontend features from scratch, all the way to get them deployed on production.I worked with Payment Integration libraries like Razor-pay and Stripe as well.I discussed and consutlted with the clients about their needs, and how we could better help them.I also worked on scraping data from websites, and cleaning and formatting them for marketing purposes."}
+                {"I Worked at Rethink UX as A Software Development Intern for 6 Months.I used various Tools and Technologies namely: WordPress, Python, JavaScript, Django, Chalice, AWS and NodeJs.I worked to develop internal tools, various backend and frontend features from scratch, all the way to get them deployed on production.I worked with Payment Integration libraries like Razor-pay and Stripe as well.I discussed and consulted with the clients about their needs, and how we could better help them.I also worked on scraping data from websites, and cleaning and formatting them for marketing purposes."}
             </BlogText>
             <Spacer y={5} />
 
