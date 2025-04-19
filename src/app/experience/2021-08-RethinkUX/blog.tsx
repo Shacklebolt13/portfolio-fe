@@ -16,6 +16,7 @@ export default function Blog() {
             <BlogHeading text="How I got in?" />
             <BlogText>
                 {"I was recruited via Internshala. I had to undergo a technical test for this, where I had to create a project as per the requirements stated by the Recruiters. After nailing the test, I was selected for the interview, where I was interviewed with the CEO, had an amazing discussion about the job, and other aspects. After the interview, I was selected for the Internship."}
+            </BlogText>
             <Spacer y={5} />
 
             <BlogHeading text="My Journey and Responsibilities" />
