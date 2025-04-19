@@ -125,21 +125,6 @@ export function getDisplayData(): Map<string, TabModel[]> {
     ],
     [SKILL_SUBSECTION]: [
       {
-        "icon": "/icons/angular.svg",
-        "id": "angular",
-        "description": "My Experience with Angular",
-        "title": "Angular"
-      }, {
-        "id": "django",
-        "description": "My experience with the Django framework.",
-        "title": "Django",
-        "icon": "/icons/django.svg"
-      }, {
-        "description": "My Experience with the Docker Platform",
-        "id": "docker",
-        "icon": "/icons/docker.svg",
-        "title": "Docker"
-      }, {
         "icon": "/icons/golang.svg",
         "id": "golang",
         "description": "My Experience with Go Lang",
@@ -154,16 +139,6 @@ export function getDisplayData(): Map<string, TabModel[]> {
         "icon": "/icons/python.svg",
         "title": "Python",
         "id": "python"
-      }, {
-        "icon": "/icons/react.svg",
-        "description": "My Experience with the Python Language",
-        "title": "React",
-        "id": "react"
-      }, {
-        "icon": "/icons/architecture.svg",
-        "id": "software-architecture",
-        "title": "Software Architecture",
-        "description": "My Experience with the Python Language"
       }
     ],
   };

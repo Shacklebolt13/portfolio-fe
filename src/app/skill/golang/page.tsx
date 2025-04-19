@@ -11,11 +11,11 @@ export default function Page() {
                 started_on={new Date("2019-10-30")}
                 ended_on={new Date("2020-02-25")}
                 logo={{
-                    icon: "/icons/python.svg",
+                    icon: "/icons/golang.svg",
                     height: 50,
                     width: 55
                 }}
-                title="Python"
+                title="GO-Lang"
             />
             <Blog />
             <RelatedSection />
