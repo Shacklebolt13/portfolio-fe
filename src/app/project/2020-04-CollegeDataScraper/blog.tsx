@@ -64,7 +64,7 @@ export default function Blog() {
             <BlogText>
                 <p className="my-2">{"I created the scraper, it was working fine. I was happy, that I had learned something new. My sadness was gone, I found a new level of confidence in me."}</p>
                 <p className="my-2">{"However, I could not find any use for the scraper. It was a fun project, but it stayed in my computer for a long time, without any use. Until........ I found a use for it. Read it "}
-                    <Link href="/project/2021-04-college-aio-app" className="text-secondary" >here</Link>
+                    <Link href="/project/2021-08-CollegeAIOApp/" className="text-secondary" >here</Link>
                 </p>
             </BlogText>
             <Spacer y={5} />
