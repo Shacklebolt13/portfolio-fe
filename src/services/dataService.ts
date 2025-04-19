@@ -1,4 +1,4 @@
-import { EDUCATION_SUBSECTION, EXPERIENCE_SUBSECTION, PROJECT_SUBSECTION, SKILL_SUBSECTION } from "@/constants/subsections";
+import { ACHIEVEMENT_SUBSECTION, BLOG_SUBSECTION, EDUCATION_SUBSECTION, EXPERIENCE_SUBSECTION, PROJECT_SUBSECTION, SKILL_SUBSECTION } from "@/constants/subsections";
 import { ContactModel } from "@/schema/ContactModel";
 import { TabModel } from "@/schema/TabModel";
 
@@ -151,11 +151,21 @@ function getSkills() {
   ]
 }
 
+function getBlogs() {
+  return []
+}
+
+function getAchievements(): any {
+  return []
+}
+
 export function getDisplayData(): Map<string, TabModel[]> {
   return new Map(Object.entries({
     [EDUCATION_SUBSECTION]: getEducation(),
     [EXPERIENCE_SUBSECTION]: getExperience(),
     [PROJECT_SUBSECTION]: getProjects(),
     [SKILL_SUBSECTION]: getSkills(),
+    [BLOG_SUBSECTION]: getBlogs(),
+    [ACHIEVEMENT_SUBSECTION]: getAchievements()
   }));
 }
