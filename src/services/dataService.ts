@@ -156,7 +156,36 @@ function getBlogs() {
 }
 
 function getAchievements(): any {
-  return []
+  return [
+    {
+      "icon": "/icons/star_emp.png",
+      "description": "I got coined as a Star Employee at Calsoft Inc.",
+      "id": "2024-06-StarEmployee",
+      "title": "Star Employee @ Calsoft Inc.",
+      "url": "https://www.linkedin.com/posts/gdsbhambrah_calsoft-grateful-star-activity-7207022070872866817-yLoQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6ulqABBkKvDrykF-bwnB1bcqF1_wuhPT4"
+    },
+    {
+      "icon": "/icons/hacktoberfest.jpg",
+      "description": "Recieved swag for my contribution to the Hacktoberfest 2022.",
+      "id": "2022-10-Hacktoberfest",
+      "title": "Swags from Hacktoberfest 2022",
+      "url": "https://www.linkedin.com/posts/gdsbhambrah_hacktoberfest-hacktoberfest2022-hacktoberfest-activity-7030962722682941440-N5F9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6ulqABBkKvDrykF-bwnB1bcqF1_wuhPT4"
+    },
+    {
+      "icon": "/icons/giet.png",
+      "description": "I was awarded a certificate of appreciation for my contribution to the GIET University's All In One Application.",
+      "id": "2020-04-GIETUApp",
+      "title": "Certificate of Appreceiation @ GIET University",
+      "url": "https://www.linkedin.com/posts/gdsbhambrah_android-hod-orientation-activity-6863457971888881664-ewtD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6ulqABBkKvDrykF-bwnB1bcqF1_wuhPT4"
+    },
+    {
+      "icon": "/icons/gdsc.png",
+      "description": "I was awarded a certificate of appreciation for my contribution to the GIET University's All In One Application.",
+      "id": "2020-01-GDSC",
+      "title": "Cybersecurity Lead @ Google Developer Student Club, GIETU.",
+      "url": "https://www.linkedin.com/posts/gdsbhambrah_gdsc-cybersecurity-lead-badge-activity-6838514931294466048-xq17?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC6ulqABBkKvDrykF-bwnB1bcqF1_wuhPT4"
+    }
+  ]
 }
 
 export function getDisplayData(): Map<string, TabModel[]> {

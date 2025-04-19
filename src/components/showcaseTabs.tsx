@@ -13,7 +13,7 @@ function populateCards(collection_name: string, data: TabModel) {
   return (
     <Card
       as={Link}
-      href={`/${collection_name}/${data.id}`}
+      href={(data.url === undefined) ? (`/${collection_name}/${data.id}`) : `${data.url}`}
       className="flex m-1"
       key={data.id}
     >
