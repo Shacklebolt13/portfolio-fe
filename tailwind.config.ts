@@ -1,4 +1,4 @@
-import { nextui } from "@nextui-org/react";
+import { heroui } from "@heroui/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -6,7 +6,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -31,7 +31,7 @@ const config: Config = {
   },
   darkMode: "class",
   plugins: [
-    nextui({
+    heroui({
       addCommonColors: true,
       defaultTheme: "dark",
       defaultExtendTheme: "dark",
@@ -61,7 +61,7 @@ const config: Config = {
             content2: "#fff",
             content3: "#fff",
             content4: "#fff",
-            divider: "magenta",
+            divider: "#2dd4bf",
             focus: "#3d3d3d",
             overlay: "black",
           },
