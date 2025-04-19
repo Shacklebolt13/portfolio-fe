@@ -19,8 +19,6 @@ export default function Blog() {
                 {"I was provided with trainings on soft skills and behavioral skills by learned HR folks of the organization."}
                 {"I was provided with technical talks in detail of the various IT competencies, like virtualization, networking etc."}
                 {"I was provided with hands on technical Training for Virtualization and DevOps."}
-                {"I was provided with hands on trainings on vRO and vROPS."}
-                {"I was provided with hands on trainings on vRO and vROPS."}
             </BlogText>
             <Spacer y={5} />
 
