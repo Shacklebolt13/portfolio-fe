@@ -1,5 +1,5 @@
-"use client";
 
+"use client";
 import { EDUCATION_SUBSECTION, EXPERIENCE_SUBSECTION } from "@/constants/subsections";
 import { TabModel } from "@/schema/TabModel";
 import { Card, CardBody, Divider, Tab, Tabs } from "@heroui/react";
@@ -9,7 +9,6 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 function populateCards(collection_name: string, data: TabModel) {
-  console.log(data?.id)
   return (
     <Card
       as={Link}

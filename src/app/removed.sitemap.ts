@@ -1,4 +1,4 @@
-// "use client";
+// ;
 // import { BASE_URL } from "@/constants/appConstants";
 // import { TABULATED_COLLECTIONS } from "@/constants/availableSubsections";
 // import getRepository from "@/db/fileRepository";

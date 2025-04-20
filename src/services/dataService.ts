@@ -64,7 +64,7 @@ function getExperience() {
       title: "Consultant @ Brane Enterprises"
     },
     {
-      title: "Co-Founded @ Wisbox",
+      title: "Co-Founder @ Wisbox",
       icon: "/icons/wisbox.png",
       id: "2022-04-Wisbox",
       description: "Co-Founded Wisbox and worked as a CTO."

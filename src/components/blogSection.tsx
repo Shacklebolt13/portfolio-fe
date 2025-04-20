@@ -1,4 +1,3 @@
-"use client";
 import { ScrollShadow } from "@heroui/react";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import { MDXRemote } from "next-mdx-remote";

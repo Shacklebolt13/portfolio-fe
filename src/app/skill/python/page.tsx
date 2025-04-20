@@ -1,4 +1,3 @@
-"use client";
 import RelatedSection from "@/components/detail/Related";
 import TitleSection from "@/components/detail/Title";
 import Blog from "./blog";

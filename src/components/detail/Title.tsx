@@ -1,4 +1,3 @@
-"use client";
 import { showDate } from "@/utils/converters";
 import Image from "next/image";
 

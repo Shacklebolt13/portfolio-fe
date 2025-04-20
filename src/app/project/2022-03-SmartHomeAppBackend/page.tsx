@@ -1,7 +1,25 @@
-"use client";
 import RelatedSection from "@/components/detail/Related";
 import TitleSection from "@/components/detail/Title";
 import Blog from "./blog";
+
+export const metadata = {
+    title: "Smart Home Application Backend",
+    description: "Created a backend for a smart home application using Django",
+    openGraph: {
+        title: "Smart Home Application Backend",
+        description: "Created a backend for a smart home application using Django",
+        images: [
+            {
+                url: "/icons/rethinkux.png",
+                width: 50,
+                height: 55,
+                alt: "Rethink UX Logo"
+            }
+        ],
+        locale: "en_US",
+        type: "website"
+    }
+}
 
 export default function Page() {
     return (

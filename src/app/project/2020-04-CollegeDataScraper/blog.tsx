@@ -1,4 +1,3 @@
-"use client";
 
 import BlogHeading from "@/components/blog/BlogHeading";
 import BlogText from "@/components/blog/BlogText";
