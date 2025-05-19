@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="flex flex-col items-center justify-center backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl bg-background/20 border border-primary/10 shadow-lg"
+                    className="flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 rounded-xl"
                 >
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4">
                         Hi, I am{" "}
