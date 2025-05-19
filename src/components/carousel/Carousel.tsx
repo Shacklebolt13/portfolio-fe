@@ -33,7 +33,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
                 <motion.div
                     drag="x"
                     dragConstraints={{ right: 0, left: -width }}
-                    className="flex gap-4 sm:gap-6 md:gap-8 justify-start sm:justify-center"
+                    className="flex gap-4 sm:gap-6 md:gap-8 justify-center"
                 >
                     {items.map((item, index) => (
                         <motion.div
