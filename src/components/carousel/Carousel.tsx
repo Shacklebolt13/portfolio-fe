@@ -41,6 +41,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
                                 largeIcon={item.largeIcon}
                                 smallIcon={item.smallIcon}
                                 title={item.title}
+                                href={item.href}
                             />
                         </motion.div>
                     ))}

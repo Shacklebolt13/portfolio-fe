@@ -16,6 +16,7 @@ const ExperienceSection: React.FC = () => {
         title: exp.title,
         description: exp.description,
         icon: exp.icon,
+        href: `/${EXPERIENCE_SUBSECTION}/${exp.id}`,
     }));
 
     // Sort experiences in reverse chronological order

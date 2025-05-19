@@ -50,6 +50,7 @@ const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ items }) => {
                         title={item.title}
                         description={item.description}
                         icon={item.icon}
+                        href={item.href}
                         isLast={index === items.length - 1}
                         position={index % 2 === 0 ? 'left' : 'right'}
                     />

@@ -15,6 +15,8 @@ const SkillsSection: React.FC = () => {
     const skillItems: CarouselItemProps[] = skills.map(skill => ({
         largeIcon: skill.icon,
         title: skill.title,
+        id: skill.id,
+        href: `/${SKILL_SUBSECTION}/${skill.id}`,
     })); return (
         <section className="py-20 relative overflow-hidden" id="skills">
             {/* Subtle background elements that enhance the glass effect */}

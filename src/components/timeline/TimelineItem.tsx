@@ -8,6 +8,7 @@ export interface TimelineItemProps {
     icon: string;
     isLast?: boolean;
     position?: 'left' | 'right';
+    href: string;
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({
@@ -16,9 +17,10 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
     icon,
     isLast = false,
     position = 'left',
+    href,
 }) => {
     return (
-        <div className={`flex items-center relative ${position === 'left' ? 'justify-end pr-10 md:pr-0' : 'justify-start pl-10 md:pl-0'} my-8 w-full`}>
+        <a href={href} className={`flex items-center relative ${position === 'left' ? 'justify-end pr-10 md:pr-0' : 'justify-start pl-10 md:pl-0'} my-8 w-full`}>
             {/* Timeline content - conditionally positioned */}
             <motion.div
                 className={`${position === 'left' ? 'md:pr-12 md:text-right' : 'md:pl-12'} relative z-10 w-full md:w-1/2`}
@@ -52,7 +54,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                     {!isLast && <div className="h-full w-0.5 bg-gradient-to-b from-primary to-primary/30 mt-2"></div>}
                 </div>
             </div>
-        </div>
+        </a>
     );
 };
 
