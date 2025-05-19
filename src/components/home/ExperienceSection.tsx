@@ -21,8 +21,8 @@ const ExperienceSection: React.FC = () => {
 
     // Sort experiences in reverse chronological order
     const sortedExperienceItems = [...experienceItems].reverse(); return (
-        <section className="py-20 relative overflow-hidden" id="experience">
-            <div className="container mx-auto px-4">
+        <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden" id="experience">
+            <div className="container mx-auto px-3 sm:px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ const ExperienceSection: React.FC = () => {
                     viewport={{ once: true }}
                 >
                     <motion.h2
-                        className="text-4xl font-bold text-center mb-8"
+                        className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-6 md:mb-8"
                         initial={{ opacity: 0, y: -10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
@@ -38,7 +38,7 @@ const ExperienceSection: React.FC = () => {
                         Professional Experience
                     </motion.h2>
                     <motion.p
-                        className="text-center text-foreground max-w-2xl mx-auto mb-12"
+                        className="text-center text-foreground text-sm sm:text-base max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-12"
                         initial={{ opacity: 0, y: -10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
@@ -46,7 +46,7 @@ const ExperienceSection: React.FC = () => {
                         My professional journey and career milestones
                     </motion.p>
 
-                    <div className="max-w-5xl mx-auto">
+                    <div className="w-full max-w-[92vw] sm:max-w-[90vw] md:max-w-4xl lg:max-w-5xl mx-auto">
                         <VerticalTimeline items={sortedExperienceItems} />
                     </div>
                 </motion.div>

@@ -12,7 +12,10 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="dark">
-      <body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      </head>
+      <body className="overflow-x-hidden">
         <HeroUiProvider>
           <div className="min-h-screen flex flex-col">
             <StaticNavbar contactDetail={contactDetail} />
