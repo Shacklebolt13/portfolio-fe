@@ -15,22 +15,28 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
         if (carouselRef.current) {
             setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
         }
-    }, []);
-
-    return (
-        <div className="overflow-hidden px-4 py-6">
+    }, []);    return (
+        <div className="relative overflow-hidden px-4 py-8 bg-gradient-to-r from-transparent via-primary/5 to-transparent rounded-lg">
+            {/* Subtle background pattern */}
+            <div className="absolute inset-0 bg-[url('/gifs/bgrain.gif')] opacity-5 mix-blend-overlay pointer-events-none"></div>
+            
             <motion.div
                 ref={carouselRef}
-                className="cursor-grab"
+                className="cursor-grab relative z-10"
                 whileTap={{ cursor: "grabbing" }}
             >
                 <motion.div
                     drag="x"
                     dragConstraints={{ right: 0, left: -width }}
-                    className="flex gap-6 justify-center"
+                    className="flex gap-8 justify-center"
                 >
                     {items.map((item, index) => (
-                        <motion.div key={index} className="min-w-[180px]">
+                        <motion.div 
+                            key={index} 
+                            className="min-w-[200px]"
+                            whileHover={{ y: -5 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
                             <CarouselItem
                                 largeIcon={item.largeIcon}
                                 smallIcon={item.smallIcon}
