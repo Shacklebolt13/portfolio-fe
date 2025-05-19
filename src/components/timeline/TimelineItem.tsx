@@ -20,7 +20,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
     return (
         <div className={`flex items-center relative ${position === 'left' ? 'justify-end pr-10 md:pr-0' : 'justify-start pl-10 md:pl-0'} my-8 w-full`}>
             {/* Timeline content - conditionally positioned */}
-            <motion.div 
+            <motion.div
                 className={`${position === 'left' ? 'md:pr-12 md:text-right' : 'md:pl-12'} relative z-10 w-full md:w-1/2`}
                 initial={{ opacity: 0, x: position === 'left' ? 50 : -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -36,11 +36,11 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                     </div>
                 </div>
             </motion.div>
-            
+
             {/* Central timeline element */}
             <div className="absolute inset-0 flex justify-center items-start h-full">
                 <div className="flex flex-col items-center">
-                    <motion.div 
+                    <motion.div
                         className="relative h-12 w-12 rounded-full border-2 border-primary bg-background/50 backdrop-blur-sm flex items-center justify-center overflow-hidden z-20 shadow-md shadow-primary/20"
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}

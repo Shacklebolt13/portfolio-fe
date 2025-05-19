@@ -15,7 +15,7 @@ const SkillsSection: React.FC = () => {
     const skillItems: CarouselItemProps[] = skills.map(skill => ({
         largeIcon: skill.icon,
         title: skill.title,
-    }));    return (
+    })); return (
         <section className="py-20 relative overflow-hidden" id="skills">
             {/* Subtle background elements that enhance the glass effect */}
             <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background pointer-events-none"></div>
@@ -23,7 +23,7 @@ const SkillsSection: React.FC = () => {
                 <div className="absolute w-40 h-40 rounded-full bg-primary/30 blur-3xl top-20 left-1/4"></div>
                 <div className="absolute w-60 h-60 rounded-full bg-primary/20 blur-3xl bottom-10 right-1/3"></div>
             </div>
-            
+
             <div className="container mx-auto px-4 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ const SkillsSection: React.FC = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                 >
-                    <motion.h2 
+                    <motion.h2
                         className="text-4xl font-bold text-center mb-8"
                         initial={{ opacity: 0, y: -10 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ const SkillsSection: React.FC = () => {
                     >
                         My Skills
                     </motion.h2>
-                    <motion.p 
+                    <motion.p
                         className="text-center text-foreground max-w-2xl mx-auto mb-12"
                         initial={{ opacity: 0, y: -10 }}
                         whileInView={{ opacity: 1, y: 0 }}

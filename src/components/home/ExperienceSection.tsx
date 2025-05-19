@@ -19,7 +19,7 @@ const ExperienceSection: React.FC = () => {
     }));
 
     // Sort experiences in reverse chronological order
-    const sortedExperienceItems = [...experienceItems].reverse();    return (
+    const sortedExperienceItems = [...experienceItems].reverse(); return (
         <section className="py-20 relative overflow-hidden" id="experience">
             <div className="container mx-auto px-4">
                 <motion.div
@@ -28,7 +28,7 @@ const ExperienceSection: React.FC = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                 >
-                    <motion.h2 
+                    <motion.h2
                         className="text-4xl font-bold text-center mb-8"
                         initial={{ opacity: 0, y: -10 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ const ExperienceSection: React.FC = () => {
                     >
                         Professional Experience
                     </motion.h2>
-                    <motion.p 
+                    <motion.p
                         className="text-center text-foreground max-w-2xl mx-auto mb-12"
                         initial={{ opacity: 0, y: -10 }}
                         whileInView={{ opacity: 1, y: 0 }}
