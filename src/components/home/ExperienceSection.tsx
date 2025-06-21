@@ -35,7 +35,7 @@ const ExperienceSection: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        Professional Experience
+                        Here are the places I have proved my mettle.
                     </motion.h2>
                     <motion.p
                         className="text-center text-foreground text-sm sm:text-base max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-12"
@@ -43,7 +43,8 @@ const ExperienceSection: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                        My professional journey and career milestones
+                        These are the places where I have worked and gained valuable experience.
+                        Each role has helped me grow as a developer and shaped my career path.
                     </motion.p>
 
                     <div className="w-full max-w-[92vw] sm:max-w-[90vw] md:max-w-4xl lg:max-w-5xl mx-auto">

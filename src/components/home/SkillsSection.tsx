@@ -38,7 +38,7 @@ const SkillsSection: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    My Skills
+                    Here are the technologies I work with
                 </motion.h2>
                 <motion.p
                     className="text-center text-foreground text-sm sm:text-base max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-12"
@@ -46,7 +46,7 @@ const SkillsSection: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    These are the technologies and tools I specialize in. Swipe to explore!
+                    These are the spells I use to conjure up amazing applications. I can work with a variety of technologies, but these are my favorites and the ones I am the best in.
                 </motion.p>
 
                 <Carousel items={skillItems} />

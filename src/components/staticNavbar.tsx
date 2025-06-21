@@ -44,7 +44,7 @@ export default function StaticNavbar({
               onPress={contactModal.onOpen}
               variant="ghost"
               color="primary"
-              className="backdrop-blur-sm bg-primary/10 hover:bg-primary/20 text-xs sm:text-sm min-w-0 px-2 sm:px-3 md:px-4"
+              className="backdrop-blur-sm bg-primary/10 hover:bg-primary/20 hover:text-black text-xs sm:text-sm min-w-0 px-2 sm:px-3 md:px-4"
               size="sm"
             >
               <span className="hidden sm:inline">About</span>
@@ -58,7 +58,7 @@ export default function StaticNavbar({
             color="primary"
             as={NextLink}
             href="/showcase"
-            className="backdrop-blur-sm bg-primary/10 hover:bg-primary/20 text-xs sm:text-sm min-w-0 px-2 sm:px-3 md:px-4"
+            className="backdrop-blur-sm bg-primary/10 hover:bg-primary/20 hover:text-black text-xs sm:text-sm min-w-0 px-2 sm:px-3 md:px-4"
             size="sm"
           >
             <span className="hidden sm:inline">Showcase</span>
@@ -71,7 +71,7 @@ export default function StaticNavbar({
             color="primary"
             download={true}
             href="/gagandeep_resume.pdf"
-            className="backdrop-blur-sm bg-primary/10 hover:bg-primary/20 text-xs sm:text-sm min-w-0 px-2 sm:px-3 md:px-4"
+            className="backdrop-blur-sm bg-primary/10 hover:bg-primary/20 hover:text-black text-xs sm:text-sm min-w-0 px-2 sm:px-3 md:px-4"
             size="sm"
           >
             <span className="hidden sm:inline">Resume</span>
