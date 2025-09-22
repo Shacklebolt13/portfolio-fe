@@ -160,6 +160,13 @@ function getBlogs() {
 function getAchievements(): any {
   return [
     {
+      "icon": "/icons/rising-star.jpg",
+      "description": "I received the Rising Star Award at Calsoft's Bi-Annual Awards Ceremony.",
+      "id": "2025-09-RisingStar",
+      "title": "Rising Star @ Calsoft Inc.",
+      "url": "https://lnkd.in/p/dBy7Zr3C"
+    },
+    {
       "icon": "/icons/star_emp.png",
       "description": "I got coined as a Star Employee at Calsoft Inc.",
       "id": "2024-06-StarEmployee",
